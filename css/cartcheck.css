@@ -1,0 +1,365 @@
+body {
+  font-size: 75%;
+  line-height: 1.5;
+  background-color: #f3f3f3;
+  color: #666;
+}
+/*头部*/
+.wo_container {
+  margin: -10px auto 0px auto;
+}
+.wo_container .wo_crumbs {
+  color: #3c3e3e;
+  font-size: 12px;
+  margin: 10px 0;
+  line-height: 2;
+}
+.wo_container .wo_header {
+  border-bottom: 2px solid #33353d;
+}
+.wo_container .wo_header .wo_header_inner {
+  width: 1225px;
+  margin: 0 auto;
+}
+.wo_container .wo_header .wo_title {
+  height: 55px;
+  padding-bottom: 25px;
+  padding-top: 30px;
+}
+.wo_container .wo_header .wo_title .wo_title_h1 {
+  color: #303030;
+  font-size: 30px;
+  margin-left: 85px;
+  line-height: 65px;
+}
+.wo_container .wo_header .wo_title .wo_title_text {
+  margin-top: 20px;
+  width: 790px;
+  color: #303030;
+  font-size: 12px;
+  margin-left: 25px;
+}
+/*步骤导航*/ 
+.wo_container .wo_header .wo_step {
+  margin-top: 30px;
+  font-size: 12px;
+}
+.wo_container .wo_header .wo_step .wo_blue {
+  background-color: #00bbd7;
+  color: #fff;
+  padding: 0px 7px;
+  height: 20px;
+  line-height: 20px;
+}
+.wo_container .wo_header .wo_step .wo_near_blue {
+  background: url("../images/cartcheckImg/arrowblue.png") no-repeat scroll center center;
+  width: 13px;
+  height: 20px;
+}
+.wo_container .wo_header .wo_step .wo_black {
+  background-color: #000;
+  color: #fff;
+  padding: 0px 7px;
+  height: 20px;
+  line-height: 20px;
+}
+.wo_container .wo_header .wo_step .wo_near_black {
+  background: url("../images/cartcheckImg/arrowblue_le.png") no-repeat scroll center center;
+  width: 13px;
+  height: 20px;
+}
+/*主体部分*/ 
+.wo_container .wo_content_inner {
+  width: 1225px;
+  margin: 0 auto;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor {
+  background-color: #f5f5f5;
+  box-shadow: 0 0 27px rgba(245, 245, 245, 0.2);
+  margin-bottom: 53px;
+  margin-top: 25px;
+}
+
+/*配送方式*/ 
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_delivery {
+  width: 96%;
+  margin: auto;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_delivery .wo_delivery_title {
+  line-height: 33px;
+  height: 33px;
+  padding-top: 20px;
+  font-size: 16px;
+  color: #303030;
+  padding-right: 20px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_delivery .wo_delivery_section {
+  margin-left: 40px;
+  margin-top: 20px;
+  height: 36px;
+  width: 78px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_delivery .wo_delivery_section label{
+  display: inline-block;
+  padding:0 8px;
+  border: 1px solid #e1e1e1;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_delivery .wo_delivery_section label:hover{
+  border: 1px solid #00bad6;
+}
+/*收货地址*/
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_new_por {
+  width: 96%;
+  margin: auto;
+  padding: 20px 0px;
+  padding-top:20px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_t {
+  height: 33px;
+  line-height: 33px;
+  padding-top: 20px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_t .wo_use_new {
+  color: #00bad6;
+  font-size: 12px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_c .wo_echo_list {
+  height: 26px;
+  line-height: 24px;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #313131;
+  position: relative;
+  border: 1px solid transparent;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_c .wo_echo_list label{
+  display: inline-block;
+  border: 1px solid transparent;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_c .wo_echo_list:hover{
+  border: 1px solid #e1e1e1;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_c .wo_echo_list .chosttochange {
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  width: 150px;
+  height: 22px;
+  line-height: 24px;
+  padding: 0px 10px;
+  margin-right:20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_c .wo_echo_list .wo_addres_hover {
+  display: none;
+  margin-left: 40px;
+  color: #00bad6;
+  font-size: 14px;
+  cursor: pointer;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_c .wo_echo_list .wo_addres_hover span{
+  padding: 0 10px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_c .wo_echo_list:hover {
+  background-color: #f0f0f0;
+  border: 1px solid #00bad6;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_c .wo_echo_list:hover .wo_addres_hover{
+  display: inline-block;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_shipping .wo_new_por .wo_new_b {
+  color: #313131;
+}
+/*支付方式*/
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_payment .wo_new_por .wo_new_por_title {
+  padding-top: 20px;
+  padding-right: 20px;
+  width: 84px;
+  height: 33px;
+  line-height: 33px;
+  font-size: 16px;
+  color: #303030;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_payment .wo_new_por ul {
+  width: 70%;
+  margin: 0 20px 20px;
+  margin-top: 15px;
+  padding: 8px 1px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_payment .wo_new_por ul .wo_payment_item {
+  text-align: center;
+  margin-right: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_payment .wo_new_por ul .wo_payment_item label{
+  display: inline-block;
+  padding:10px 8px;
+  border: 1px solid #e1e1e1;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_payment .wo_new_por ul label:hover {
+  border: 1px solid #00bad6;
+}
+/*发票信息*/
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_invoice{
+  border-top: 1px solid #e1e1e1;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_invoice .wo_new_por .wo_new_por_title {
+  padding-top: 20px;
+  padding-right: 20px;
+  width: 84px;
+  height: 33px;
+  line-height: 33px;
+  font-size: 16px;
+  color: #303030;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_invoice .wo_new_por ul {
+  width: 70%;
+  margin: 0 20px;
+  margin-top: 15px;
+  padding: 8px 1px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_invoice .wo_new_por ul .wo_invoice_item {
+  text-align: center;
+  margin-right: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_invoice .wo_new_por ul .wo_invoice_item label{
+  display: inline-block;
+  padding: 8px 10px;
+  border:1px solid transparent;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_invoice .wo_new_por ul .wo_invoice_item label:hover {
+  border: 1px solid #00bad6;
+}
+/*商品及优惠券*/ 
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_top {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*头部*/
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_top a {
+  font-size: 16px;
+  color: #303030;
+  line-height: 33px;
+}
+/*主体部分*/
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table thead {
+  border-bottom: 1px solid #e6e6e6;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table thead tr {
+  height: 37px;
+  color: #303030;
+  font-size: 14px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table tbody .wo_product {
+  color: #303030;
+  font-size: 14px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table tbody .wo_product td {
+  padding-top: 15px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table tbody .wo_product .wo_p_info {
+  text-align: left;
+  padding-left: 20px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table tbody .wo_product .wo_p_info .wo_p_title {
+  margin-left: 10px;
+  height: 40px;
+  width: 255px;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table tbody .wo_product .wo_p_info .wo_p_title a {
+  color: #303030;
+  font-size: 14px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table tbody .wo_product .wo_p_info .wo_p_title a:hover {
+  color: #c0c0c0;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table tbody .wo_product .wo_p_discount,
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_listall .wo_new_por .wo_listall_bottom table tbody .wo_product .wo_p_subtotal {
+  color: #c00000;
+}
+/*结算*/ 
+/*结算左边*/ 
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_jiesuan .wo_new_por .wo_new_por_left {
+  padding: 10px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_jiesuan .wo_new_por .wo_new_por_left .wo_use_yhquan {
+  margin: 10px 0 10px 10px;
+  background: url("../images/cartcheckImg/cart_yuannn.png") 0 9px no-repeat;
+  vertical-align: top;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_jiesuan .wo_new_por .wo_new_por_left .wo_use_yhquan a {
+  color: #ededed;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 4px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_jiesuan .wo_new_por .wo_new_por_left textarea {
+  width: 300px;
+  height: 160px;
+  border: 1px solid #e1e1e1;
+  margin-top: 20px;
+  font-size: 12px;
+  padding:2px;
+  overflow: scroll;
+}
+/*结算右边*/ 
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_jiesuan .wo_new_por .wo_new_por_right {
+  width: 500px;
+  padding: 10px 15px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_jiesuan .wo_new_por .wo_new_por_right .wo_jiesuan_list {
+  width: 355px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_jiesuan .wo_new_por .wo_new_por_right .wo_jiesuan_list .wo_jiesuan_small div {
+  float: left;
+  width: 200px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_jiesuan .wo_new_por .wo_new_por_right .wo_jiesuan_list .wo_jiesuan_small .wo_active_num {
+  width: 150px;
+  padding-left: 5px;
+  color: #c00000;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_jiesuan .wo_new_por .wo_new_por_right .wo_btn {
+  padding-right: 10px;
+  background-color: #00bad6;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 60px;
+}
+.wo_container .wo_content_inner .wo_main .wo_infor .wo_jiesuan .wo_new_por .wo_new_por_right .wo_btn2 {
+  padding-right: 10px;
+  background-color: #dbdbdb;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  margin-right: 60px;
+}

@@ -1,0 +1,92 @@
+article {
+	width: 100%;
+	background:#f3f3f3;
+}
+.login_content{
+	width: 100%;
+	height: 600px;
+	background: url('../images/login_1.jpg');
+	position: relative;
+}
+.login_window {
+	width: 300px;
+	height: 379px;
+	background: white;
+	position: absolute;
+	right: 400px;
+	top: 40px;
+	padding: 5px 25px 0px;
+}
+.login_article p{
+	font-size: 18px;
+	color:rgb(49,49,49);
+	line-height: 30px;
+	margin-bottom: 25px;
+	margin-top: 10px
+}
+.login_user,.login_password{
+	width: 300px;
+	height: 38px;
+	border:1px solid rgb(225,225,225);
+	position: relative;
+}
+.login_user input,.login_password input{
+	width: 250px;
+	height: 36px;
+}
+.login_password label{
+	width: 40px;
+	height: 39px;
+	display: inline-block;
+	background: url('../images/member-password.png') no-repeat;
+	background-position: center;
+	background-color: rgba(204, 204, 204, 0.12);
+}
+.login_user label {
+	width: 40px;
+	height: 39px;
+	display: inline-block;
+	background: url('../images/login_name.png') no-repeat;
+	background-position: center;
+	background-color: rgba(204, 204, 204, 0.12);
+}
+.cue{
+	width: 300px;
+	height: 15px;
+	font-size: 12px;
+	color: red;
+	line-height: 15px;
+}
+.login_forget{
+	padding-right: 10px;
+	font-size: 14px;
+	height: 30px;
+	line-height: 21px;
+}
+.login_forget a{
+	color:#313131;
+}
+.login_button input{
+	width: 310px;
+	height: 40px;
+	background: rgb(0,186,214);
+	font-size: 18px;
+	color: white;
+	margin-bottom: 10px;
+}
+.login_first{
+	font-size: 12px;
+}
+.login_first a{
+	margin-left: 10px;
+	color: rgb(0,186,214);
+	font-size: 14px;
+}
+.error{
+	width: 20px;
+	height: 20px;
+	background: url('../images/wron.png') no-repeat;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}

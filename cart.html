@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel='icon' href='http://www.sundan.com/public/app/site/statics/favicon.ico' type='image/x-icon' />
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/cart.css">
+		<link rel='icon' href='http://www.sundan.com/public/app/site/statics/favicon.ico' type='image/x-icon' />
+	</head>
+	<body>
+		<div class="cart_container clearfix">
+			<div class="cart_crumbs"></div>
+			<!-- 头部 -->
+			<div class="cart_header clearfix">
+				<div class="cart_header_inner">
+					<!-- 头部上部分 -->
+					<div class="cart_title clearfix">
+						<div class="cart_title_logo fl"><a href="index.html"><img src="images/cartImg/cart_logo.png" alt=""></a></div>
+						<div class="cart_title_h1 fl">我的购物车</div>
+						<div class="cart_title_text fl">商品从门店发货，小件商品14:00前购买，当天发货。门店自提订单，24小时内将提货码发送至您的手机，请您留意手机短信。由于市场变化及各种合理商业努力都难以控制的因素的影响，商城无法保证用户提交的订单希望购买的商品都有货；如用户拟购买的商品缺货，用户和商家都可取消订单。</div>
+						<!-- 订单步骤 -->
+						<div class="cart_step fr">
+							<div class="cart_step1 cart_blue fl">我的购物车</div>
+							<div class="cart_naer_blue fl"></div>
+							<div class="cart_step2 cart_black fl">填写核对订单</div>
+							<div class="cart_near_black fl"></div>
+							<div class="cart_step3 cart_black fl">成功提交订单</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="cart_content_inner">
+				<div class="cart_main">
+					<!-- 购物车为空的情况 -->
+					<div class="cart_empty clearfix">
+						<span class="cart_icon fl"></span>
+						<span class="cart_tip fl">
+							<b>您的购物车里还没有商品</b>，您可以：
+							<br>
+							将<a href="member.html">收藏夹</a>中的商品添加进来，或者去看看<a href="index.html">商城 »</a>
+						</span>
+					</div>
+					<!-- 购物车不为空 -->
+					<div class="cart_content">
+						<form action="" method="post">
+							<!-- 购物车内容 -->
+							<table id="cart_list" class="cart_lists" width="100%" style="border-collapse:collapse;">
+							    <thead>
+      							  <tr style="color:#303030; font-size:16px; font-weight:bold; line-height:60px; line-height:60px;">
+  									<th>
+  										<input type="checkbox" id="chs-c-all" class="check-all chk_3 allChecked allChecked1" name="cart_all">
+  									</th>
+    								<th>
+    									<p style="text-align:left; float:left;">全选</p>
+    									<p>商品名称</p>
+    								</th>
+							        <th>单价</th>
+							        <th>优惠</th>
+							        <th>数量</th>
+							        <th>小计</th>
+							        <th>积分</th>
+							        <th>操作</th>
+							      </tr>
+							    </thead>
+							    <!-- 主商品 -->
+							    <tbody class="cart_item"></tbody>
+							    <tbody class="cart_bottom" style="text-align: center;">
+							    </tbody>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jQuery.js"></script>
+	<script src="js/cart.js"></script>
+</html>

@@ -1,0 +1,201 @@
+$(".swiper_manage").click(function(){
+	$(".scshop_floor").css("display","none");
+	$(".scshop_swiper").css("display","block");
+	$(".swiper_pic").html("");
+	$.ajax({
+		type:"post",
+		async:true,
+		data:{},
+		url:"http://139.199.79.192:8081/ShunDian/upload.do",
+		dataType:"json",
+		success:function(data){
+			console.log(data.lunbotu.length);
+			for(var i=0;i<data.lunbotu.length;i++){
+				$("<tr class=\"swiper_pic\" data-id=\""+data.lunbotu[i][0]+"\"><td class=\"swiper_word\"><p>"+data.lunbotu[i][0]+"</p></td><td class=\"swiper_img\"><img src=\""+data.lunbotu[i][1]+"\" alt=\"\"></td><td><a href=\"###\" class=\"swiper_shanchu\" ><img src=\"images/shanchu.gif\" alt=\"\"/></a></td/></tr>").appendTo(".swiper_table");
+			}
+			minus();
+		}
+	})
+})
+$("#add").click(function(){
+	var formData = new FormData();
+	formData.append("myFile",$("#add_file")[0].files[0]);
+	$.ajax({
+		type:"post",
+		async:true,
+		data:formData,
+		url:"http://139.199.79.192:8081/ShunDian/insertupload.do",
+		dataType:"json",
+		processData:false,
+		//Jquery不要修改请求内容类型
+		contentType:false,
+		success:function(data){
+			if(data.result=="true"){
+				window.location.href="scshop.html";
+			}
+		}
+	})
+})
+$("#xiugai").click(function(){
+	$.ajax({
+		type:"post",
+		async:true,
+		processData:false,
+		//Jquery不要修改请求内容类型
+		contentType:false,
+		data:{name:$(".xiugai_input").val(),myFile:document.getElementById("xiugai_file").files[0]},
+		url:"http://139.199.79.192:8081/ShunDian/updateupload.do",
+		dataType:"json",
+		success:function(data){
+			if(data.result=="true"){
+				window.location.href="scshop.html";
+			}
+		}
+	})
+})
+
+function minus(){
+	$(".swiper_shanchu").each(function(){
+		$(this).click(function(){
+			_this=this;
+			$.ajax({
+				type:"post",
+				async:true,
+				data:{name:$(_this).parents(".swiper_pic").attr("data-id")},
+				url:"http://139.199.79.192:8081/ShunDian/deleteupload.do",
+				dataType:"json",
+				success:function(data){
+					console.log(data.result);
+					if(data.result=="true"){
+						$(_this).parents(".swiper_pic").remove();
+					}
+				}
+			})
+		})
+	})
+}
+$(".floor_manage").click(function(){
+	$(".scshop_floor").css("display","block");
+	$(".scshop_swiper").css("display","none");
+	$(".floor_table").html("");
+	$.ajax({
+		type:"get",
+		async:false,
+		data:{},
+		url:"http://139.199.79.192:8081/ShunDian/selectfloor.do",
+		dataType:"json",
+		success:function(data){
+			for(var i=0;i<data.floor.length;i++){
+				$("<tr class=\"floor_list\" data-id=\""+data.floor[i].floorId+"\"><td class=\"floor_word\"><p>"+data.floor[i].floorId+"</p></td><td class=\"floor_word\"><p>"+data.floor[i].floorName+"</p></td><td><a href=\"###\" class=\"floor_shanchu\" ><img src=\"images/shanchu.gif\" alt=\"\"/></a><a href=\"###\" class=\"floor_cha\" ><img src=\"images/tianjia.gif\" alt=\"\"/></a></td/></tr>").appendTo(".floor_table");
+			}
+			floorMinus();
+			floorcha();
+		}
+	})	
+})
+$(".floor_add").click(function(){
+	$(".scshop_floor").css("display","none");
+	$(".scshop_swiper").css("display","none");
+	$(".floor_look").css("display","none");
+	$(".floortianjia").css("display","block");
+})
+$("#add_floor").click(function(){
+	var formData1=new FormData();
+	formData1.append("myFile1",$("#myfile1")[0].files[0]);
+	formData1.append("myFile2",$("#myfile2")[0].files[0]);
+	formData1.append("myFile3",$("#myfile3")[0].files[0]);
+	formData1.append("myFile4",$("#myfile4")[0].files[0]);
+	formData1.append("myFile5",$("#myfile5")[0].files[0]);
+	formData1.append("myFile6",$("#myfile6")[0].files[0]);
+	formData1.append("myFile7",$("#myfile7")[0].files[0]);
+	formData1.append("myFile8",$("#myfile8")[0].files[0]);
+	formData1.append("myFile9",$("#myfile9")[0].files[0]);
+	formData1.append("fName",$(".add_f").val());
+	$.ajax({
+		type:"post",
+		async:true,
+		dataType:"json",
+		processData:false,
+		//Jquery不要修改请求内容类型
+		contentType:false,
+		data:formData1,
+		url:"http://139.199.79.192:8081/ShunDian/insertfloor.do",
+		success:function(data){
+			if(data.result=="true"){
+				window.location.href="scshop.html";
+			}
+		}
+	})
+})
+function floorMinus(){
+	$(".floor_shanchu").each(function(){
+		$(this).click(function(){
+			t_his=this;
+			$.ajax({
+				type:"get",
+				async:false,
+				dataType:"json",
+				data:{id:$(t_his).parents(".floor_list").attr("data-id")},
+				url:"http://139.199.79.192:8081/ShunDian/deletefloor.do",
+				success:function(data){
+					if(data.result==true){
+						$(t_his).parents(".floor_list").remove();
+					}
+				}
+			})
+		})
+	})
+}
+$("#xiugai_floor").click(function(){
+	var formData2=new FormData();
+	formData2.append("myFile1",$("#myfile1")[0].files[0]);
+	formData2.append("myFile2",$("#myfile2")[0].files[0]);
+	formData2.append("myFile3",$("#myfile3")[0].files[0]);
+	formData2.append("myFile4",$("#myfile4")[0].files[0]);
+	formData2.append("myFile5",$("#myfile5")[0].files[0]);
+	formData2.append("myFile6",$("#myfile6")[0].files[0]);
+	formData2.append("myFile7",$("#myfile7")[0].files[0]);
+	formData2.append("myFile8",$("#myfile8")[0].files[0]);
+	formData2.append("myFile9",$("#myfile9")[0].files[0]);
+	formData2.append("fName1",$(".xiugai_f").val());
+	formData2.append("fId",$(".xiugai_id").val());
+	$.ajax({
+		type:"post",
+		async:true,
+		data:formData2,
+		dataType:"json",
+		processData:false,
+		//Jquery不要修改请求内容类型
+		contentType:false,
+		url:"http://139.199.79.192:8081/ShunDian/updatefloor.do",
+		success:function(data){
+			if(data.result=="true"){
+				window.location.href="scshop.html";
+			}
+		}
+	})
+})
+function floorcha(){
+	$(".floor_cha").each(function(){
+		$(this).click(function(){
+		$(".floor_image").html("");
+		$(".scshop_floor").css("display","none");
+		$(".scshop_swiper").css("display","none");
+		$(".floor_look").css("display","block");
+			aId=$(this).parents(".floor_list").attr("data-id");
+			$.ajax({
+				type:"post",
+				data:{floor_id:aId},
+				url:"http://139.199.79.192:8081/ShunDian/selectfloorImage.do",
+				async:true,
+				dataType:"json",
+				success:function(data){
+					$(".look_floor_name").html(data.fName);
+					for(var i=0;i<data.floorImages.length;i++){
+						$("<tr class=\"floor_image\" data-id=\""+data.floorImages[i].fId+"\"><td class=\"floor_img\"><img src=\""+data.floorImages[i].fUrl+"\" alt=\"\"></td><td class=\"floor_word\"><p>"+data.floorImages[i].fId+"</p></td><td><a href=\"###\" class=\"floor_shanchu\" ><img src=\"images/shanchu.gif\" alt=\"\"/></a><a href=\"###\" class=\"floor_cha\" ><img src=\"images/tianjia.gif\" alt=\"\"/></a></td/></tr>").appendTo(".look_floorimg_table");
+					}
+				}
+			})
+		})
+	})
+}

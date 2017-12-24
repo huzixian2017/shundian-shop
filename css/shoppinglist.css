@@ -1,0 +1,321 @@
+header, footer .footer_wrap, .nav .nav_list {
+	width: 1520px;
+}
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+/*  设置公共宽  */ 
+.sl_width {
+	width: 1520px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+.sl_yourChoose h4 {
+	font-size: 14px;
+    color: #313131;
+    line-height: 33px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+/*  设置  您已选择    -----  分类 -----  样式  */ 
+.sl_yourChoose .sl_yourChoose_list .sl_yourChoose_list_class_parent .sl_yourChoose_list_class,.sl_yourChoose_list_price>div {
+	padding: 4px 10px;
+	font-size: 12px;
+	border: 1px solid #c1c1c1;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	margin-right: 16px;
+}
+.sl_yourChoose .sl_yourChoose_list .sl_yourChoose_list_class_parent>div>ul {
+	width: 100%;
+	position: absolute;
+	top: 25px;
+	left: -1px;
+	border: 1px solid #c1c1c1;
+	overflow: hidden;
+	display: none;
+	background-color: white;
+	z-index: 20;
+}
+.sl_yourChoose .sl_yourChoose_list .sl_yourChoose_list_class_parent>div:hover ul {
+	display: block;
+}
+/*  设置  您已选择    -----  分类 -----  样式  多选框样式  */ 
+.sl_yourChoose .sl_yourChoose_list .sl_yourChoose_list_class_parent>div>ul li a {
+	display: block;
+	padding-left: 8px;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	color: #767676;
+}
+.sl_yourChoose .sl_yourChoose_list .sl_yourChoose_list_class_parent>div>ul li a:hover {
+	background-color: #00bbd7;
+	color: white;
+}
+/*  设置  您已选择    -----  价格 -----  样式  */ 
+.sl_yourChoose .sl_yourChoose_list .sl_yourChoose_list_price {
+	display: none;
+}
+/*  设置下面详情  表格  */ 
+.sl_yourChoose table {
+	width: 1520px;
+	border: 1px solid #f0f0f0;
+    margin-top: 8px;
+    border-bottom: 5px solid #e5e5e5;
+    overflow: hidden;
+    border-spacing: 0px;
+}
+.sl_yourChoose table th {
+	text-align: left;
+    padding-left: 15px;
+    background-color: #f5f5f5;
+    width: 99px;
+    padding: 9px 0px 9px 18px;
+    font-size: 14px;
+}
+.sl_yourChoose table td{
+	background-color: #fff;
+    overflow: hidden;
+    border-bottom: 1px dashed #e1e1e1;
+    font-size: 12px;
+    padding-left: 20px;
+}
+.sl_yourChoose table td>div {
+	padding: 6px 10px 6px 1px;
+}
+.sl_yourChoose table td>div a {
+	display: inline-block;
+	width: 108px;
+	height: 26px;
+	text-align: left;
+	line-height: 26px;
+	color: #767676;
+}
+/*  设置下面详情  表格 -----  品牌  -----  样式  */ 
+.sl_yourChoose table .sl_yourChoose_brand_td div {
+	width: 1000px;
+	overflow: hidden;
+	max-height: 120px;
+}
+.sl_yourChoose table .sl_yourChoose_brand_td div a {
+	border: 1px solid #DDD;
+    height: 46px;
+    width: 114px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #00bbd7;
+    text-align: center;
+    line-height: 48px;
+    float: left;
+    margin: -1px 0 0 -1px;
+    padding-left: 2px;
+    position: relative;
+}
+.sl_yourChoose table .sl_yourChoose_brand_td div a img {
+	width: 96%;
+}
+.sl_yourChoose table .sl_yourChoose_brand_td div a .sl_yourChoose_brand_td_del {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	right: 0;
+	bottom: 0;
+	background-color: #00bbd7;
+	z-index: 20;
+	display: none;
+}
+/*  设置下面详情  表格 -----  价格  -----  样式  */ 
+.sl_yourChoose table .sl_yourChoose_prices a {
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	color: #666;
+	margin-right: 20px;
+	padding-left: 6px;
+}
+.sl_yourChoose table .sl_yourChoose_prices a img {
+	vertical-align: middle;
+}
+/*  设置   综合排序  */
+.sl_shoplist_parent {
+	width: 100%;
+	background-color: #f6f6f6;
+}
+.sl_shoplist .sl_shoplist_nav {
+	margin-bottom: 10px;
+}
+.sl_shoplist_parent .sl_shoplist .sl_shoplist_goods {
+	width: 1550px;
+}
+.sl_shoplist .sl_shoplist_nav>span>a{
+	font-size: 12px;
+    color: #000;
+    height: 43px;
+    line-height: 43px;
+    display: inline-block;
+    border-right: 1px solid #e6e6e6;
+    padding: 0px 30px;
+    text-align: center;
+    background-color: #fff;
+}
+.sl_shoplist .sl_shoplist_nav .sl_shoplist_nav_price {
+	display: inline-block;
+    height: 21px;
+    width: 12px;
+    line-height: 12px;
+    vertical-align: sub;
+}
+.sl_shoplist .sl_shoplist_nav .sl_shoplist_nav_price .icon1 {
+	margin-bottom: -4px;
+    display: inline-block;
+}
+.sl_shoplist .sl_shoplist_nav .sl_shoplist_nav_price .icon2 {
+	color: #00bbd7;
+}
+.sl_shoplist .sl_shoplist_nav>span>a svg {
+	height: 10px;
+}
+.sl_shoplist .sl_shoplist_nav .sl_shoplist_page {
+	overflow: hidden;
+}
+.sl_shoplist .sl_shoplist_nav .sl_shoplist_page svg {
+	width: 20px;
+    height: 35px;
+    margin-top: 5px;
+    // color: #999;
+    color: #3f3d3d;
+}
+.sl_shoplist .sl_shoplist_nav>span .sp {
+	padding: 0;
+}
+.sl_shoplist .sl_shoplist_nav .sl_shoplist_page .icon3 {
+	margin-right: -5px;
+}
+.sl_shoplist .sl_shoplist_goods ul li {
+	float: left;
+	margin: 0 30px 40px 0;
+	position: relative;
+	overflow: hidden;
+	width: 280px;
+	background-color: white;
+	text-align: center;
+}
+.sl_shoplist .sl_shoplist_goods ul li .sl_shoplist_goods_maxpic img {
+	width: 200px;
+	height: 200px;
+	margin: 10px auto 20px;
+}
+.sl_shoplist .sl_shoplist_goods ul li>a{
+	display: block;
+}
+.sl_shoplist .sl_shoplist_goods ul li .sl_shoplist_goods_info h3 {
+	background: #f6f6f6;
+    font-size: 14px;
+    color: #313131;
+    height: 50px;
+    line-height: 25px;
+    text-indent: 0;
+    overflow: hidden;
+    font-weight: 400px;
+    margin: 10px 0 20px 1em;
+}
+.sl_shoplist .sl_shoplist_goods ul li .sl_shoplist_goods_bottom {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+    height: 40px;
+    line-height: 40px;
+    width: 93%;
+    position: relative;
+}
+.sl_shoplist .sl_shoplist_goods ul li .sl_shoplist_goods_bottom div img {
+	width: 27px;
+	height: 27px;
+	border: 1px solid #e1e1e1;
+	float: left;
+	margin-left: 5px;
+}
+.sl_shoplist .sl_shoplist_goods ul li .sl_shoplist_goods_bottom>span{
+	color: #fc3637;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.page_div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	font-family: "microsoft yahei";
+	color: #666666;
+	margin-right: 10px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	text-align: right;
+}
+/*
+ * 页数按钮样式
+ */
+
+.page_div a {
+	min-width: 30px;
+	height: 28px;
+	border: 1px solid #dce0e0!important;
+	text-align: center;
+	margin: 0 4px;
+	cursor: pointer;
+	line-height: 28px;
+	color: #666666;
+	font-size: 13px;
+	display: inline-block;
+}
+
+#firstPage,
+#lastPage {
+	width: 50px;
+	color: #a29d9d;
+	border: 1px solid #a29d9d!important;
+}
+
+#prePage,
+#nextPage {
+	width: 70px;
+	color: #a29d9d;
+	border: 1px solid #a29d9d!important;
+}
+
+.page_div .current {
+	background-color: #a29d9d;
+	border-color: #a29d9d;
+	color: #FFFFFF;
+}
+
+.totalPages {
+	margin: 0 10px;
+}
+
+.totalPages span,
+.totalSize span {
+	color: #a29d9d;
+	margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,180 @@
+body{
+	background: white;
+}
+.import_content{
+	width:1200px;
+	margin:0 auto;
+}
+article{
+	background: #f0f0f0;
+	padding-top: 65px;
+}
+.import_recommand_title,.import_country_title{
+	font-size: 26px;
+	color: #606f8b;
+	margin-bottom: 10px;
+}
+.import_recommand_title span,.import_country_title span{
+	color:#b1b1ce;
+	font-size: 14px;
+}
+.import_recommand_swiper{
+	width: 486px;
+	height: 552px;
+	margin-right: 10px;
+}
+.import_recommand_swiper .swiper-slide{
+	height: 552px;
+}
+.import_recommand_product_right_top{
+	width: 704px;
+	height: 270px;
+	background: white;
+	margin-bottom: 10px;
+}
+.import_recommand_country_pic{
+	margin-top: 40px;
+}
+.import_recommand_country_name p{
+	font-size: 17px;
+	margin-top: 10px;
+}
+.import_recommand_country_desc p{
+	font-size: 12px;
+	margin:20px 0;
+}
+.import_recommand_country_price p{
+	font-size: 14px;
+	margin:10px 0;
+}
+.import_recommand_country_price p span{
+	font-size: 24px;
+	color: #f50144;
+	font-weight: 400;
+}
+.import_recommand_country_buy p{
+	width: 130px;
+    height: 34px;
+    background: #3257a1;
+    color: #fff;
+    line-height: 34px;
+    text-align: center;
+}
+.import_recommand_product_right_bottom{
+	width: 704px;
+	height: 273px;
+}
+.import_recommand_product_right_bottom_left,.import_recommand_product_right_bottom_right{
+	width: 347px;
+	height: 273px;
+	background: white;
+}
+.import_recommand_product_right_bottom_left{
+	margin-right:10px;
+}
+.import_recommand_product_right_bottom .import_recommand_country_name{
+	width: 174px;
+}
+.import_recommand_product_right_bottom .import_recommand_product_right_top_pic{
+	margin-top: 40px;
+}
+.import_country{
+	margin-top: 60px;
+}
+.import_country_list ul li{
+	width: 240px;
+	height: 90px;
+}
+.import_country_list_word{
+	width: 120px;
+    height: 60px;
+    font-size: 22px;
+    color: #53617f;
+    margin: 20px 0 0 20px;
+}
+.import_country_list{
+	margin-top: 20px;
+}
+.country_1{
+	margin-top: 60px;
+}
+.country_1_product{
+	width:850px;
+}
+.country_1_product li{
+	width: 415px;
+	height: 287px;
+	background: white;
+	margin: 0px 0 10px 10px;
+}
+.country_1_item_pic{
+	margin-top: 40px;
+}
+.country_1_item_pic img{
+	width: 210px;
+}
+.country_1_item_word{
+	margin-top: 20px;
+	width: 191px;
+}
+.country_1_item_name{
+	height: 50px;
+	font-size: 17px;
+	margin-top: 25px;
+}
+.country_1_item_desc{
+    font-size: 12px;
+    color: #000000;
+    margin: 20px 0;
+}
+.country_1_item_price{
+	font-size: 14px;
+    color: #000000;
+    margin: 10px 0;
+}
+.country_1_item_price span{
+	font-size: 24px;
+    color: #f50144;
+    font-weight: 400;
+}
+.country_1_item_buy p{
+	width: 130px;
+	height: 34px;
+	background: #3257a1;
+    color: #fff;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 15px;
+}
+.decorate_1{
+	width: 374px;
+    height: 737px;
+    position: absolute;
+    top: 1800px;
+    left: 140px;
+    z-index: 1;
+}
+.decorate_2{
+	width: 375px;
+    height: 734px;
+    position: absolute;
+    top: 2560px;
+    left: 1400px;
+    z-index: 1;
+}
+.decorate_3{
+	width: 374px;
+    height: 736px;
+    position: absolute;
+    top: 3100px;
+    left: 140px;
+    z-index: 1;
+}
+.decorate_4{
+	width: 381px;
+    height: 734px;
+    position: absolute;
+    top: 3860px;
+    left: 1400px;
+    z-index: 1;
+}

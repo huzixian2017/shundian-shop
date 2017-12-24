@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>成功提交订单</title>
+		<link rel='icon' href='http://www.sundan.com/public/app/site/statics/favicon.ico' type='image/x-icon' />
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/payOrder.css">
+	</head>
+	<body>
+		<div class="po_container clearfix">
+			<!-- 不知道啥用 -->
+			<div class="po_crumbs"></div>
+			<!-- 头部 -->
+			<div class="po_header clearfix">
+				<div class="po_header_inner">
+					<!-- 头部上部分 -->
+					<div class="po_title clearfix">
+						<div class="po_title_logo fl">
+							<a href=""><img src="images/payOrderImg/cart_logo.png" alt=""></a>
+						</div>
+						<div class="po_title_h1 fl">订单支付</div>
+						<div class="po_title_text fl">商品从门店发货，小件商品14:00前购买，当天发货。门店自提订单，24小时内将提货码发送至您的手机，请您留意手机短信。由于市场变化及各种合理商业努力都难以控制的因素的影响，商城无法保证用户提交的订单希望购买的商品都有货；如用户拟购买的商品缺货，用户和商家都可取消订单。</div>
+						<!-- 订单步骤 -->
+						<div class="po_step fr">
+							<div class="po_step1 po_black fl">我的购物车</div>
+							<div class="po_near_black fl"></div>
+							<div class="po_step2 po_black fl">填写核对订单</div>
+							<div class="po_near_blue fl"></div>
+							<div class="po_step3 po_blue fl">成功提交订单</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="po_content_inner">
+				<div class="po_main">
+					<div class="po_info">
+						<!-- 提交订单提醒 -->
+						<div class="po_info_top clearfix">
+							<div class="po_order_ok fl"><img src="images/payOrderImg/payment_ok.png" alt=""></div>
+							<div class="po_top_center fl">
+								<p class="po_order_success">您的订单已经提交成功 <span class="po_quick_pay">，请您在15分钟内完成付款</span></p>
+								<p>请尽快支付，超时将自动取消订单</p>
+								<p>收货信息 : &nbsp;&nbsp;<span class="po_order_success_info"></span></p>
+							</div>
+							<div class="po_top_right">
+								<div class="po_should_pay">
+									<b>应付总金额：</b>
+									<b class="po_pay_money">￥16488.00 </b>
+								</div>
+								<div class="po_info_more">
+									订单详情
+								</div>
+							</div>
+						</div>
+						<!-- 订单详细信息 -->
+						<div class="po_order_message">
+							<p class="po_order_message_num1"></p>
+							<pre>
+								<p class="po_order_message_user"></p>
+								<p></p>
+								<p><span>商品名称: </span><span class="po_order_message_name"></span></p>
+								<p></p>
+								<p>配送方式：送货到家</p>
+								<p class="po_order_message_num"></p>
+								<p>发票信息：无</p>
+							</pre>
+						</div>
+						<!-- 确认支付 -->
+						<form action="" method="post" class="po_content_form" id="po_order_form" target="_blank">
+							<div class="po_form_main">
+								<div class="po_form_content">
+									<div class="po_form_top">
+										<span>您已选择支付方式：</span><span class="po_form_way">微信扫码支付</span><a href="" class="po_chose_other">选择其它支付方式 »</a>
+									</div>
+									<div class="po_form_btn">
+										<button type="button" class="po_shundian_pay">确认支付</button>
+									</div>
+								</div>
+							</div>
+						</form>
+						<!-- 可能需要链接的地方 -->
+						<div class="po_info_mayneed">
+							您可能需要：&nbsp;<a href="">查看订单</a><a href="">查看帮助</a><a href="">继续购物</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jQuery.js"></script>
+	<script src="js/payOrder.js"></script>
+</html>

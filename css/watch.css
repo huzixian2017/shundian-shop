@@ -1,0 +1,59 @@
+body {
+	min-width: 1000px;
+}
+.watch_content_banner {
+	width: 100%;
+    height: 683px;
+    background: url("../w_img/banner.jpg") no-repeat top center;
+}
+.watch_content {
+	width: 100%;
+    height: 3078px;
+    background: url("../w_img/bj.jpg") no-repeat top center;
+}
+.watch_content h1 {
+	height: 60px;
+    line-height: 70px;
+    width: 460px;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #c5c5c5;
+    margin-bottom: 93px;
+}
+.watch_content>div {
+	width: 999px;
+    height: 383px;
+    margin: auto;
+    cursor: pointer;	
+}
+.watch_content .watch_content_garmin1 {
+	margin-bottom: 63px;
+    background: url("../w_img/p_01.jpg") no-repeat;
+}
+.watch_content .watch_content_garmin2 {
+	background: url("../w_img/p_02.jpg") no-repeat;
+	margin-bottom: 65px;
+}
+.watch_content .watch_content_garmin3 {
+	background: url("../w_img/p_03.jpg") no-repeat;
+	margin-bottom: 70px;
+}
+.watch_content .watch_content_garmin4 {
+	background: url("../w_img/p_05.jpg") no-repeat;
+	margin-bottom: 72px;
+}
+.watch_content .watch_content_garmin5 {
+	background: url("../w_img/p_05.jpg") no-repeat;
+	margin-bottom: 72px;
+}
+.watch_content .watch_content_garmin6 {
+	background: url("../w_img/p_06.jpg") no-repeat;
+}
+.watch_content .watch_content_footer {
+	width: 260px;
+    height: 90px;
+    cursor: pointer;
+    margin: 85px auto;
+}

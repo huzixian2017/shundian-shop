@@ -1,0 +1,16 @@
+$(".house_tab_title").each(function(index,obj){
+	$(obj).click(function(){
+		$(".house_type_main").each(function(){
+			$(obj).parents(".keting").find(".house_type_main").css("display","none");
+		})
+		$(obj).parents(".keting").find(".house_type_main").eq(index).css("display","block");
+	})
+})
+$(".chufang_title").each(function(index,obj){
+	$(obj).click(function(){
+		$(".chufang_body").each(function(){
+			$(obj).parents(".chufang").find(".chufang_body").css("display","none");
+		})
+		$(obj).parents(".chufang").find(".chufang_body").eq(index).css("display","block");
+	})
+})

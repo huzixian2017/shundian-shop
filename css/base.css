@@ -1,0 +1,66 @@
+body,ul,ol,p,h1,h2,h3,h4 {
+	margin: 0;
+	padding: 0;
+
+}
+/*ul ol 默认样式*/
+ul,ol {
+	list-style-type: none;
+}
+/**/
+.mb {
+	margin-bottom: 10px;
+}
+address, i, em {
+	font-style: normal;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+a {
+	text-decoration: none;
+}
+input {
+	outline: none;
+	border: none;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+.mb14 {
+	margin-bottom: 14px;
+}
+.mr14 {
+	margin-right: 14px;
+}
+.ml14 {
+	margin-left: 14px;
+}
+.mt14 {
+	margin-top: 14px;
+}
+.border-r {
+	border-right: 1px solid #665e57;
+}
+.border-b {
+	border-bottom: 1px solid #665e57;
+}
+
+
+
+
+
+
+
+
+

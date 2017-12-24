@@ -1,0 +1,201 @@
+body {
+  font-size: 75%;
+  line-height: 1.5;
+  background-color: #f3f3f3;
+  color: #666;
+}
+/*头部*/
+.po_container {
+  margin: -10px auto 0px auto;
+}
+.po_container .po_crumbs {
+  color: #3c3e3e;
+  font-size: 12px;
+  margin: 10px 0;
+  line-height: 2;
+}
+.po_container .po_header {
+  border-bottom: 2px solid #33353d;
+}
+.po_container .po_header .po_header_inner {
+  width: 1225px;
+  margin: 0 auto;
+}
+.po_container .po_header .po_title {
+  height: 55px;
+  padding-bottom: 25px;
+  padding-top: 30px;
+}
+.po_container .po_header .po_title .po_title_h1 {
+  color: #303030;
+  font-size: 30px;
+  margin-left: 85px;
+  line-height: 65px;
+}
+.po_container .po_header .po_title .po_title_text {
+  margin-top: 20px;
+  width: 790px;
+  color: #303030;
+  font-size: 12px;
+  margin-left: 25px;
+}
+/*步骤导航*/ 
+.po_container .po_header .po_step {
+  margin-top: 30px;
+  font-size: 12px;
+}
+.po_container .po_header .po_step .po_blue {
+  background-color: #00bbd7;
+  color: #fff;
+  padding: 0px 7px;
+  height: 20px;
+  line-height: 20px;
+}
+.po_container .po_header .po_step .po_near_black {
+  background: url("../images/payOrderImg/arrowblue_black.png") no-repeat scroll center center;
+  width: 13px;
+  height: 20px;
+}
+.po_container .po_header .po_step .po_black {
+  background-color: #000;
+  color: #fff;
+  padding: 0px 7px;
+  height: 20px;
+  line-height: 20px;
+}
+.po_container .po_header .po_step .po_near_blue {
+  background: url("../images/payOrderImg/arrowblue_le.png") no-repeat scroll center center;
+  width: 13px;
+  height: 20px;
+}
+/*主体部分*/ 
+.po_container .po_content_inner {
+  width: 1225px;
+  margin: 0 auto;
+}
+/*订单详细提醒*/ 
+.po_container .po_content_inner .po_main .po_info .po_info_top {
+  margin: 25px 0px 0px 0px;
+  padding: 25px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_top .po_order_ok {
+  width: 60px;
+  height: 70px;
+  margin-right: 30px;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_top .po_top_center *{
+  vertical-align: middle;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_top .po_top_center {
+  width: 700px;
+  margin-left: 5px;
+  text-align: left;
+  font-size: 14px;
+  color: #313131;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_top .po_top_center .po_order_success{
+  font-size: 18px;
+  color: #666;
+  line-height: 20px;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_top .po_top_center .po_quick_pay {
+  font-weight: bold;
+  color: #313131;
+  font-size: 18px;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_top .po_top_right {
+  position: absolute;
+  right: 25px;
+  top: 30px;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_top .po_top_right .po_should_pay {
+  font-size: 16px;
+  color: #313131;
+  line-height: 20px;
+  text-align: center;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_top .po_top_right .po_should_pay .po_pay_money {
+  font-size: 24px;
+  color: #f00000;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_top .po_top_right .po_info_more {
+  background: url("../images/payOrderImg/list_up.png") right 20px no-repeat;
+  padding:15px;
+  text-align: right;
+}
+/*订单详细信息*/ 
+.po_container .po_content_inner .po_main .po_info .po_order_message {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+  color: rgb(49, 49, 49);
+  padding: 25px 0px 0px 116px;
+  border-top: 1px solid rgb(243, 243, 243);
+  font-size: 14px;
+  white-space: pre;
+  line-height: 10px;
+}
+/*支付*/
+.po_container .po_content_inner .po_main .po_info .po_form_main {
+  padding: 30px;
+  padding-top: 0;
+  background-color: #fff;
+}
+.po_container .po_content_inner .po_main .po_info .po_form_main .po_form_content {
+  padding: 20px;
+}
+.po_container .po_content_inner .po_main .po_info .po_form_main .po_form_content .po_form_top {
+  padding-left: 5px;
+  line-height: 2.1em;
+  padding-top: 4em;
+  font-size: 16px;
+  color: #313131;
+}
+.po_container .po_content_inner .po_main .po_info .po_form_main .po_form_content .po_form_top .po_form_way {
+  color: #00bad6;
+  font-size: 16px;
+  margin-right: 15px;
+  font-weight: 100;
+}
+.po_container .po_content_inner .po_main .po_info .po_form_main .po_form_content .po_form_top .po_chose_other {
+  color: #00bad6;
+  margin-right: 10px;
+}
+.po_container .po_content_inner .po_main .po_info .po_form_main .po_form_content .po_form_btn {
+  padding-left: 5px;
+  margin-top: 2em;
+}
+.po_container .po_content_inner .po_main .po_info .po_form_main .po_form_content .po_form_btn .po_shundian_pay {
+  width: 140px;
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 50px;
+  background-color: #00bad6;
+  text-align: center;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_mayneed {
+  font-size: 16px;
+  color: #313131;
+  margin-top: 15px;
+}
+.po_container .po_content_inner .po_main .po_info .po_info_mayneed a {
+  margin-right: 25px;
+  color: #00bad6;
+  font-size: 14px;
+}
+.po_order_message_name {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 19px;
+}
+
+

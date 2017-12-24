@@ -1,0 +1,112 @@
+.scshop_order {
+	background: #fff;
+    padding: 10px;
+    font-family: Microsoft Yahei;
+    font-size: 12px;
+}
+.scshop_order h1 {
+	background: #fbfbfb;
+    border: 1px solid #e9e9e9;
+    color: #9CACAF;
+    font-size: 14px;
+    padding: 7px 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+.scshop_order .scshop_order_select{
+	// background: #F4FaFb;
+    border: 1px solid #BBDDE5;
+    padding: 5px;
+    padding-left: 35px;
+    color: #808080;
+    margin: 0 0 10px 0;
+    background: url("../images/icon_search.gif") no-repeat 5px center;
+	background-color: #F4FaFb;
+}
+.scshop_order .scshop_order_select input{
+	border: 1px solid #e9e9e9;
+	margin-right: 10px;
+	height: 19px;
+}
+.scshop_order table {
+	border-collapse: collapse;
+	width: 100%;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+}
+.scshop_order table td,.scshop_order table th {
+	border: 1px solid #e8e8e8;
+	line-height: 25px;
+}
+.scshop_order table .order_select_head th {
+	color: #111;
+    line-height: 2;
+    background-color: #e5f6fe;
+}
+.scshop_order table .order_select_sp{
+	color: #4face5;
+}
+.order_pagenav {
+	text-align: right;
+	margin-top: 10px;
+}
+
+
+.page_div a {
+	min-width: 30px;
+	height: 28px;
+	border: 1px solid #dce0e0!important;
+	text-align: center;
+	margin: 0 4px;
+	cursor: pointer;
+	line-height: 28px;
+	color: #666666;
+	font-size: 13px;
+	display: inline-block;
+}
+
+#firstPage,
+#lastPage {
+	width: 50px;
+	color: #a29d9d;
+	border: 1px solid #a29d9d!important;
+}
+
+#prePage,
+#nextPage {
+	width: 70px;
+	color: #a29d9d;
+	border: 1px solid #a29d9d!important;
+}
+
+.page_div .current {
+	background-color: #a29d9d;
+	border-color: #a29d9d;
+	color: #FFFFFF;
+}
+
+.totalPages {
+	margin: 0 10px;
+}
+
+.totalPages span,
+.totalSize span {
+	color: #a29d9d;
+	margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

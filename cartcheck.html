@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>填写核对订单</title>
+		<link rel='icon' href='http://www.sundan.com/public/app/site/statics/favicon.ico' type='image/x-icon' />
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/cartcheck.css">
+		<link rel='icon' href='http://www.sundan.com/public/app/site/statics/favicon.ico' type='image/x-icon' />
+	</head>
+	<body>
+		<div class="wo_container clearfix">
+			<!-- 不知道啥用 -->
+			<div class="wo_crumbs"></div>
+			<!-- 头部 -->
+			<div class="wo_header clearfix">
+				<div class="wo_header_inner">
+					<!-- 头部上部分 -->
+					<div class="wo_title clearfix">
+						<div class="wo_title_logo fl">
+							<a href="index.html"><img src="images/cartcheckImg/cart_logo.png" alt=""></a>
+						</div>
+						<div class="wo_title_h1 fl">收货人信息</div>
+						<div class="wo_title_text fl">商品从门店发货，小件商品14:00前购买，当天发货。门店自提订单，24小时内将提货码发送至您的手机，请您留意手机短信。由于市场变化及各种合理商业努力都难以控制的因素的影响，商城无法保证用户提交的订单希望购买的商品都有货；如用户拟购买的商品缺货，用户和商家都可取消订单。</div>
+						<!-- 订单步骤 -->
+						<div class="wo_step fr">
+							<div class="wo_step1 wo_black fl">我的购物车</div>
+							<div class="wo_near_black fl"></div>
+							<div class="wo_step2 wo_blue fl">填写核对订单</div>
+							<div class="wo_near_blue fl"></div>
+							<div class="wo_step3 wo_black fl">成功提交订单</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="wo_content_inner">
+				<div class="wo_main">
+					<!-- 顶部标题，没显示 -->
+					<div style="padding: 0 0 5px 10px;"></div>
+					<!-- checkout 表单提交内容 -->
+					<form action="" method="post" id="wo_form" enctype="multipart/form-data">
+						<!-- 订单信息填写 -->
+						<div class="wo_infor">
+							<!-- 配送方式模块 -->
+							<div class="wo_delivery clearfix">
+								<div class="wo_delivery_title fl">配送方式</div>
+								<div class="fl wo_delivery_warn" style="background: #00bad6;color:#fff;margin-top: 25px;padding:10px; display: none">  !!! 请选择一种配送方式</div>
+								<div class="wo_delivery_section fl" style="margin-left: 80px; position: relative;">
+									<input type="radio" style="position: absolute;top:0;left:0;" name="wo_delivery_ch" id="wo_delivery_check1" class="wo_delivery_ch">
+									<label for="wo_delivery_check1" class="wo_ckeckA">送货到家</label>		
+								</div>
+								<div class="wo_delivery_section fl" style="position: relative;">
+									<input type="radio" style="position: absolute;top:0;left:0;" name="wo_delivery_ch" id="wo_delivery_check2" class="wo_delivery_ch">
+									<label for="wo_delivery_check2" class="wo_ckeckA">门店自提</label>
+								</div>
+							</div>	
+							<!-- 收货信息模块 -->
+							<div class="wo_shipping">
+								<div class="wo_new_por">
+									<div class="wo_new_t">
+										<i>收货人地址</i>
+										<a href="" class="wo_use_new">[使用新地址]</a>
+										<span class="wo_shipping_warn" style="background: #00bad6; color:#fff;padding:10px;margin-left: 10px; display: none;">!!! 请填写并选择地址</span>
+									</div>
+									<div class="wo_new_c">
+										<ul></ul>
+									</div>
+									<!-- 更多收货地址 -->
+									<div class="wo_new_b">
+										<div class="wo_new_btn" style="background: url('images/cartcheckImg/list_down.png') 80px 7px no-repeat ;">收起收货地址</div>
+									</div>
+								</div>
+							</div>
+							<!-- 支付方式模块 -->
+							<div class="wo_payment">
+								<div class="wo_new_por clearfix">
+									<p class="wo_new_por_title fl">支付方式</p>
+									<p class="wo_payment_warn fl" style="background: #00bad6; color:#fff;padding:10px;margin-top: 20px; display: none"> !!! 请选择支付方式</p>
+									<ul class="fl">
+										<li class="wo_payment_item fl">
+											<input type="radio" style="position: absolute;top:0;left:0;" name="wo_payment_ch" id="wo_payment_check" class="wo_payment_ch"><label for="wo_payment_check" class="wo_checkC">微信扫码支付</label></li>
+										<li class="wo_payment_item fl">
+											<input type="radio" style="position: absolute;top:0;left:0;" name="wo_payment_ch" id="wo_payment_check1" class="wo_payment_ch"><label for="wo_payment_check1" class="wo_checkC">支付宝</label></li>
+										<li class="wo_payment_item fl">
+											<input type="radio" style="position: absolute;top:0;left:0;" name="wo_payment_ch" id="wo_payment_check2" class="wo_payment_ch"><label for="wo_payment_check2" class="wo_checkC">支付宝花呗</label></li>
+										<li class="wo_payment_item fl">
+											<input type="radio" style="position: absolute;top:0;left:0;" name="wo_payment_ch" id="wo_payment_check3" class="wo_payment_ch"><label for="wo_payment_check3" class="wo_checkC">网银支付</label></li>
+										<li class="wo_payment_item fl">
+											<input type="radio" style="position: absolute;top:0;left:0;" name="wo_payment_ch" id="wo_payment_check4" class="wo_payment_ch"><label for="wo_payment_check4" class="wo_checkC">公司转账</label></li>
+										<li class="wo_payment_item fl">
+											<input type="radio" style="position: absolute;top:0;left:0;" name="wo_payment_ch" id="wo_payment_check5" class="wo_payment_ch"><label for="wo_payment_check5" class="wo_checkC">顺电钱包</label></li>
+									</ul>
+								</div>
+							</div>
+							<!-- 发票信息模块 -->
+							<div class="wo_invoice">
+								<div class="wo_new_por clearfix">
+									<p class="wo_new_por_title fl">发票信息</p>
+									<p class="wo_invoice_warn fl" style="background: #00bad6; color:#fff;padding:10px;margin-top: 20px; display: none;"> !!! 请选择发票类型</p>
+									<ul class="fl">
+										<li class="wo_invoice_item fl">
+											<input type="radio" style="position: absolute;top:0;left:0;" name="wo_invoice_ch" id="wo_invoice_check" class="wo_invoice_ch"><label for="wo_invoice_check" class="wo_checkD">不需要发票</label></li>
+										<li class="wo_invoice_item fl">
+											<input type="radio" style="position: absolute;top:0;left:0;" name="wo_invoice_ch" id="wo_invoice_check1" class="wo_invoice_ch"><label for="wo_invoice_check1" class="wo_checkD">个人发票</label></li>
+										<li class="wo_invoice_item fl">
+											<input type="radio" style="position: absolute;top:0;left:0;" name="wo_invoice_ch" id="wo_invoice_check2" class="wo_invoice_ch"><label for="wo_invoice_check2" class="wo_checkD">公司发票</label></li>	
+									</ul>
+								</div>
+							</div>
+							<!-- 商品清单及优惠券 -->
+							<div class="wo_listall">
+								<div class="wo_new_por">
+									<!-- 头部 -->
+									<div class="wo_listall_top clearfix">
+										<a href="" class="fl">商品清单及优惠券</a>
+										<a href="" class="fr">返回修改购物车></a>
+									</div>
+									<!-- 主体 -->
+									<div class="wo_listall_bottom">
+										<table class="wo_list_table">
+											<thead>
+    											<tr>
+										            <th style=" text-align:left; padding-left:125px;">商品</th>
+											        <th>数量</th>
+											        <th>单价</th>
+											        <th>优惠</th>
+											        <th>小计</th>
+											        <th>积分</th>
+											    </tr>
+											</thead>
+											<tbody>
+												<!-- 主商品 -->
+												<tr class="wo_product last">
+													<td class="wo_p_info clearfix" width="345">
+														<img style="float:left;" width="60" height="60" src="images/cartcheckImg/1_3.jpg" class="fl">
+														<div class="wo_p_title fl" style="margin-left: 10px;height: 40px;overflow: hidden;">
+															<a target="_blank" href="/product-10939.html">美的（Midea）省电星 小1匹 定频单冷 分体式空调 KF-23GW/Y-DA400(D3)  （白色）</a> 
+														</div>
+													</td>
+													<td style="padding-top:35px;"></td>
+													<!--判断是不是预售商品-->
+													<td style="padding-top:32px;">
+														<span class="wo_warn_message is_jiesuan" data="no"></span>
+													</td>
+													<td class="wo_p_discount" style="padding-top:35px;"> - 0 元</td>
+													<td class="wo_p_subtotal" style="padding-top:35px;">1799.00 元</td>
+													<td class="wo_p_integral" style="padding-top:35px;">
+													-
+													</td>
+												</tr>
+												<tr class="wo_product last">
+													<td class="wo_p_info clearfix" width="345">
+														<img style="float:left;" width="60" height="60" src="images/cartcheckImg/1_4.jpg" class="fl">
+														<div class="wo_p_title fl" style="margin-left: 10px;height: 40px;overflow: hidden;">
+															<a target="_blank" href="/product-10939.html">美的（Midea）省电星 小1匹 定频单冷 分体式空调 KF-23GW/Y-DA400(D3)  （白色）</a> 
+														</div>
+													</td>
+													<td style="padding-top:35px;">1799元 x 1</td>
+													<!--判断是不是预售商品-->
+													<td style="padding-top:32px;">
+														<span class="wo_warn_message is_jiesuan" data="no">库存不足</span>
+													</td>
+													<td class="wo_p_discount" style="padding-top:35px;"> - 0 元</td>
+													<td class="wo_p_subtotal" style="padding-top:35px;">1799.00 元</td>
+													<td class="wo_p_integral" style="padding-top:35px;">
+													-
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- 结算 -->
+							<div class="wo_jiesuan">
+								<div class="wo_new_por clearfix">
+									<!-- 订单备注 -->
+									<div class="wo_new_por_left fl">
+										<div class="wo_use_yhquan"><a href="">+</a>使用优惠券</div>
+										<div>订单备注：</div>
+										<textarea name="wo_yq" class="wo_yq" cols="60" rows="3" placeholder="请在此填写您对该订单或商品的特殊要求或说明，最多300字。"></textarea>
+									</div>
+									<!-- 结算详情 -->
+									<div class="wo_new_por_right fr">
+										<ul class="wo_jiesuan_list fr">
+											<li class="wo_jiesuan_small clearfix"><div>商品件数：</div><div class="wo_active_num wo_active_numCount">1 件</div></li>
+											<li class="wo_jiesuan_small clearfix"><div>金额合计：</div><div class="wo_active_num wo_active_numPrice1">16488.00 元</div></li>
+											<li class="wo_jiesuan_small clearfix"><div>运费：</div><div class="wo_active_num">0.00 元</div></li>
+											<li class="wo_jiesuan_small clearfix"><div>应付总金额：</div><div class="wo_active_num wo_active_numPrice2">16488.00 元</div></li>
+										</ul>
+										<button type="button" class="wo_btn fr">去结算</button>
+										<!-- <button type="button" class="wo_btn2">去结算</button> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jQuery.js"></script>
+	<script src="js/cartcheck.js"></script>
+</html>

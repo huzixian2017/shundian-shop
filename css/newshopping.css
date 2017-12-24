@@ -1,0 +1,296 @@
+.ns_content .ns_swiper {
+	padding-top: 10px;
+	background: url("../ns_img/bj.jpg") no-repeat 0 0;
+}
+.ns_content .ns_swiper .clearfix {
+	width: 1225px;
+    margin: 0 auto;
+}
+.ns_content .ns_swiper .clearfix>div {
+	height: 365px;
+
+}
+.ns_content .ns_swiper .clearfix .ns_swiper_lunbo {
+	width: 590px;
+	height: 360px;
+}
+.ns_content .ns_swiper .clearfix .ns_swiper_lunbo .swiper-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #ccc;
+	position: relative;
+}
+.ns_content .ns_swiper .clearfix .ns_swiper_lunbo .swiper-container .swiper-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.ns_content .ns_swiper .clearfix .ns_swiper_lunbo .swiper-container .swiper-slide{
+	width: 590px;
+	height: 360px;
+	float: left;
+}
+.swiper-pagination, .swiper-button-next, .swiper-button-prev {
+	position: absolute;
+	cursor: pointer;
+}
+.swiper-button-next, .swiper-button-prev {
+	font-size: 25px;
+	width: 20px;
+	height: 25px;
+	background: rgba(128, 128, 128, 0.37);
+	top: 167px;
+	text-align: center;
+	line-height: 25px;
+}
+.swiper-button-next {
+	right: 0;
+}
+.swiper-pagination {
+	padding: 5px 8px;
+	overflow: hidden;
+	margin: 0 auto;
+	bottom: 20px;
+	background: rgba(128, 128, 128, 0.37);
+	border-radius: 10px;
+}
+.swiper-pagination span {
+	float: left;
+	width: 10px;
+	height: 10px;
+	background: lightgray;
+	margin: 0 8px;
+	border-radius: 50%;
+}
+.ns_content {
+	width: 100%;
+	background-color: #f3f3f3;
+}
+.ns_content .ns_swiper .clearfix .ns_swiper_top {
+	margin-left: 30px;
+	width: 594px;
+	height: 365px;
+}
+.slide3 {
+	background: url("../ns_img/lun3.jpg") no-repeat 0 0;
+}
+.slide2 {
+	background: url("../ns_img/lun2.jpg") no-repeat 0 0;
+}
+.slide1 {
+	background: url("../ns_img/lun1.jpg") no-repeat 0 0;
+}
+.ns_content .ns_swiper .clearfix .ns_swiper_top .sp {
+	margin-top: 25px;
+}
+.ns_content .ns_swiper .clearfix .ns_swiper_top .ns_swiper_top_left {
+	width: 376px;
+	height: 170px;
+}
+.ns_content .ns_swiper .clearfix .ns_swiper_top .ns_swiper_top_right {
+	width: 188px;
+	height: 170px;
+	margin-left: 30px;
+}
+.ns_content h2 {
+	line-height: 45px;
+	color: #32353c;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.ns_content .ns_products {
+	width: 1206px;
+	margin: 0 auto;
+	// background-color: #f3f3f3;
+	padding: 20px 0;
+}
+.ns_content .ns_products .ns_products_chuizi {
+	height: 270px;
+	background-color: white;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_left {
+	margin: 13px 0 0 50px;
+	width: 520px;
+	cursor: pointer;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_left .chuizi_left_img {
+	background-color: skyblue;
+	width: 183px;
+	height: 247px;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_left .chuizi_left_info {
+	width: 300px;
+    margin: 20px 0px 0px 35px;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_left .chuizi_left_info h3 {
+	color: #000;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_left .chuizi_left_info span {
+	color: #727272;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_left .chuizi_left_info p {
+	color: #d23d3e;
+    font-size: 26px;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_right {
+	width: 590px;
+    height: 270px;
+    background: #fff;
+    float: left;
+    margin-left: 43px;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_right .chuizi_right_radio{
+	width: 369px;
+    height: 238px;
+    background: #000;
+    margin: 17px 20px 0 25px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_right .chuizi_right_info {
+	width: 154px;
+    height: 238px;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_right .chuizi_right_info>div {
+	margin-top: 17px;
+	height: 111px;
+	position: relative;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_right .chuizi_right_info>div img {
+	width: 154px;
+	height: 110px;
+}
+.ns_content .ns_products .ns_products_chuizi .ns_products_chuizi_right .chuizi_right_info>div div {
+	width: 154px;
+    height: 25px;
+    background: #000;
+    position: absolute;
+    margin-top: 17px;
+    opacity: 0.8;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.ns_products_content {
+	width: 1248px;
+}
+.ns_products_content li a{
+	display: block;
+	width: 290px;
+    height: 350px;
+    background-color: #fff;
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+    position: relative;
+}
+.ns_products_content li .ns_products_content_details {
+	width: 230px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.ns_products_content li .ns_products_content_details img {
+	max-width: 230px;
+    max-height: 230px;
+    text-align: center;
+}
+.ns_products_content li .ns_products_content_details h3 {
+	color: #000000;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 100;
+}
+.ns_products_content li .ns_products_content_details p {
+	text-align: left;
+    color: #cb0001;
+    padding: 10px 0px;
+}
+.ns_products_content li .ns_products_content_mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+	display: none;
+}
+.ns_products .ns_products_content li a:hover .ns_products_content_mask {
+	display: block;
+}
+.page_div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	font-family: "microsoft yahei";
+	color: #666666;
+	margin-right: 10px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	text-align: right;
+}
+/*
+ * 页数按钮样式
+ */
+
+.page_div a {
+	min-width: 30px;
+	height: 28px;
+	border: 1px solid #dce0e0!important;
+	text-align: center;
+	margin: 0 4px;
+	cursor: pointer;
+	line-height: 28px;
+	color: #666666;
+	font-size: 13px;
+	display: inline-block;
+}
+
+#firstPage,
+#lastPage {
+	width: 50px;
+	color: #0073A9;
+	border: 1px solid #0073A9!important;
+}
+
+#prePage,
+#nextPage {
+	width: 70px;
+	color: #0073A9;
+	border: 1px solid #0073A9!important;
+}
+
+.page_div .current {
+	background-color: #0073A9;
+	border-color: #0073A9;
+	color: #FFFFFF;
+}
+
+.totalPages {
+	margin: 0 10px;
+}
+
+.totalPages span,
+.totalSize span {
+	color: #0073A9;
+	margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+

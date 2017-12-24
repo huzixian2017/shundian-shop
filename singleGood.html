@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单个商品详情页</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/singleGood.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel='icon' href='http://www.sundan.com/public/app/site/statics/favicon.ico' type='image/x-icon' />
+</head>
+<body>
+	<!-- 这是 头部 开始 -->
+	<header class="clearfix">
+		<h1 class="fl"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+		<div class="header_search fl">
+			<div class="header_search_inp fl">
+				<img src="images/search.png" alt="">
+				<input class="header_inp" type="text">
+			</div>
+			<div class="header_btn"><a href="###">搜索</a></div>
+			<ul class="header_hotlist"></ul>
+		</div>
+		<div class="header_onload fl">
+			<!-- 用户登陆状态 -->
+			<div class="header_load">
+				<div class="header_name"></div>
+				<ul class="header_onload_ul">
+					<li>我的订单1</li>
+					<li>我的订单2</li>
+					<li>我的订单3</li>
+				</ul>
+			</div>
+			<!-- 用户未登陆状态 -->
+			<div class="header_unload">
+				<a class="header_unload_regist" href="###">注册</a>
+				<a class="header_unload_load" href="###">登陆</a>
+			</div>
+		</div>
+		<div class="header_car fl">
+			<a href="cart.html">
+				<div class="header_car_num">0</div>		
+			</a>
+		</div>
+	</header>
+	<!-- 这是 头部 结束 -->
+	<!-- 这是 导航 开始 -->
+	<div class="nav">
+		<ul class="nav_list clearfix">
+			<li class="nav_list_special fl">
+				<a class="nav_list_a" href="###">所 有 商 品 信 息</a>
+				<ul class="nav_list_ul"></ul>
+				<table>
+					<tr class="title2"><td></td></tr>
+					<tr class="ad">
+						<td>
+							<a href="###"></a>
+							<a href="###"></a>
+							<a href="###"></a>
+						</td>
+					</tr>
+				</table>
+			</li>
+			<li class="fl"><a href="###">首页</a></li>
+			<li class="fl"><a href="###">新品</a></li>
+			<li class="fl"><a href="###">家</a></li>
+			<li class="fl"><a href="###">进口</a></li>
+			<li class="fl"><a href="###">限时特惠</a></li>
+			<li class="fl"><a href="###">Apple</a></li>
+			<li class="fl"><a href="###">主题馆</a></li>
+			<li class="fl"><a href="###">品牌街</a></li>
+			<li class="fl"><a href="###">以旧换新</a></li>
+			<li class="fl"><a href="###">顺电APP</a></li>
+		</ul>	
+	</div>
+	<!-- 这是 导航 结束 -->
+	<!-- 这是 带有购物车的侧边栏 开始 -->
+	<div class="slide_car">
+		<div class="mini_cart">
+			<div class="mini_cart_x"></div>
+			<div class="mini_cart_content clearfix">
+				<div class="mini_cart_pic fl">
+					
+				</div>
+				<div class="mini_cart_word fl">
+					<div class="mini_cart_name">
+						
+					</div>
+					<h3>加入购物车成功。</h3>
+				</div>
+			</div>
+			<div class="mini_cart_button">
+				<button class="mini_cart_go">继续购物</button>
+				<button class="mini_cart_total">去购物车结算</button>
+			</div>
+		</div>
+		<div class="slide_car_content">
+			<!-- 购物车 -->
+			<ul class="slide_car_top">
+				<li class="slide_car_top_cart">
+					<img src="images/index_cart_fix.png" alt="">
+					<p id="car_show_num">0</p>
+				</li>
+				<li class="slide_car_top_shou">
+					<img src="images/index_favourite_right.png" alt="">
+				</li>
+				<li class="slide_car_top_kefu">
+					<img src="images/index_fix_right_kefu.png" alt="">
+				</li>
+			</ul>
+
+			<!-- 二维码 -->
+			<ul class="slide_car_bottom">
+				<li class="slide_car_bottom_erweima">
+					<img src="images/index_fix_erweima.png" alt="">
+					<div class="slide_car_bottom_erweima_hide">
+						<img src="images/index_erweima.jpg"/ alt="">
+					</div>
+				</li>
+				<li class="slide_car_bottom_top">
+					<img src="images/top.png" alt="">
+				</li>
+				<li class="slide_car_bottom_fankui">
+					<img src="images/yonghufankui.png" alt="">
+				</li>
+			</ul>
+		</div>
+		<!-- 隐藏的 收藏夹 -->
+		<div class="slide_car_hiden">
+			<div class="slide_car_hiden_content">
+				<div>
+					<input class="hiden_content_selectAll" checked type="checkbox"> 全选
+				</div>
+				<ul class="hide_ul">
+
+				</ul>
+			</div>
+			<div class="slide_car_hiden_footer">
+				<div class="hiden_footer_info">
+					<span>已选<span class="hiden_footer_count">0</span>件商品</span>
+					<span class="hiden_footer_price">0</span>
+				</div>
+				<div class="hiden_footer_pay">结算</div>
+			</div>
+		</div>
+		<!-- 隐藏的 收藏夹 -->
+		<div class="slide_shou_hiden">
+			<div class="slide_shou_hiden_content clearfix">
+				<div class="shou_hiden_title">
+					<img class="shou_hiden_title_img" src="images/index_favourite_right-right.png" alt="">
+					<span>我的收藏</span>
+				</div>
+				<ul class="hide_shou_ul">
+					
+				</ul>
+			</div>
+			<div class="slide_shou_hiden_footer"><a href="###">查看更多关注商品</a></div>
+		</div>
+		<!-- 隐藏的 简易版登陆界面 -->
+		<div class="min_onload">
+			<div class="min_onload_top">
+				<h3>欢迎登陆</h3>
+				<img class="min_onload_close" src="images/close_denglui.png" alt="">
+			</div>
+			<div class="min_onload_bottom">
+				<div class="username inp">
+					<span></span>
+					<input type="text" placeholder="用户名/邮箱地址/手机号" class="username_input">
+				</div>
+				<div class="password inp">
+					<span></span>
+					<input class="password_input" type="password" placeholder="填写密码">
+				</div>
+				<div class="free">
+					<span>忘记登陆密码？</span>
+					<span>免费注册</span>
+				</div>
+				<div class="min_onload_bottom_btn"><a href="###">登陆</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- 这是 带有购物车的侧边栏 结束 -->
+	<!-- 分类路径 -->
+	<div class="sg_wrap_path">
+		<div class="sg_inner_path">
+			<span><a href="" class="sg_inner_path_before"></a></span>
+			<span><a href="" class="sg_inner_path_before"></a></span>
+			<span><a href="" class="sg_inner_path_before"></a></span>
+			<span><a href="" class="sg_inner_path_before"></a></span>
+			<span class="sg_now"></span>
+		</div>
+	</div>
+	<!-- 页面整个内容 -->
+	<div id="sg_container" class="sg_container_wrap">
+		<!-- 商品内容 -->
+		<div class="sg_container_main clearfix">
+			<!-- 商品展示 -->
+			<div class="sg_container_main_show clearfix">
+				<!-- 商品展示左边 -->
+				<div class="sg_container_main_show_left fl">
+					<div class="sg_show_left_top">
+						<!-- 原图 -->
+						<div class="sg_show_left_top_img">
+							<img src="" alt="">
+							<div id="sg_min_move"></div>
+						</div>
+						<!-- 局部放大图 -->
+						<div class="sg_show_left_top_maxImg">
+							<img src="" alt="" id="sg_maxImg">
+						</div>
+					</div>
+					<ul class="sg_show_left_center">
+					</ul>
+					<div class="sg_show_left_bottom clearfix">
+						<span class="fl">商品编号：148374</span>
+						<span class="sg_share fl">分享到 <img src="images/sgImg/share-qq.png" id="qq_link"><img src="images/sgImg/share_weixin.png" id="weixin_link"><img src="images/sgImg/share_xinlang.png" id="weibo_link"></span>
+						<span class="sg_saoma fl"><img src="images/sgImg/1_2.png" alt=""></span>
+						<span class="sg_collect fl">收藏</span>
+					</div>
+				</div>
+				<!-- 商品展示右边 -->
+				<div class="sg_container_main_show_right fl">
+					<div class="sg_main_show_right_top">
+						<h2></h2>
+						<div class="sg_show_right_top_priceBox">
+							<span class="sg_show_right_top_symbol">￥</span>
+							<span class="sg_show_right_top_price"></span>
+						</div>
+					</div>
+					<div class="sg_main_show_right_center">
+						<div class="sg_main_show_right_centerTop">
+							<div class="sg_main_show_right_centerTop1">
+								<span class="sg_give">送优惠券</span>
+								<span>满额返券活动，订单（Apple手机不参...<span class="sg-more" style="color:#00bbd7;cursor: pointer"> 详情></span>
+							</div>
+							<div class="sg_main_show_right_centerTop2 clearfix">
+								<span class="sg_select_color fl">选择颜色</span>
+								<ul class="sg_select_type fl">
+									<li class="select_good1 fl"><a href=""><img src="images/sgImg/1_5.jpg" alt=""></a></li>
+									<li class="select_good2 fl"><a href=""><img src="images/sgImg/1_5.jpg" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="sg_main_show_right_centerTop3 clearfix">
+								<span class="sg_select_capacity fl">选择容量</span>
+								<span class="sg_capacity fl">64GB</span>
+							</div>
+							<div class="sg_main_show_right_centerTop4 clearfix">
+								<span class="select_num fl">数量</span>
+								<div class="sg_change_num fl">
+									<span id="sg_sub" >-</span><input type="text" name="sg_num" id="sg_num" value="1" ><span id="sg_add">+</span>
+									<span class="sg_enough">仓库充足</span>
+								</div>
+							</div>
+							<br>
+						</div>
+						<div class="sg_main_show_right_centerBottom">
+						</div>
+					</div>
+					<div class="sg_main_show_right_bottom">
+						<div class="sg_main_show_right_bottomT clearfix" >
+							<div class="sg_show_arrive fl">配送至</div>
+							<div class="sg_show_right_bottom_address fl">
+								<div class="sg_select_address"><!-- 安徽&nbsp; 安庆&nbsp; 铜陵市 --></div>
+								<!-- 地址下面的选框区域 -->
+								<div class="create_address" style="display: none;">
+									<div class="address_title">
+										<span class="address_provice" ></span>
+										<span class="address_city"></span>
+										<span class="address_qu" >请选择</span>
+										<span class="exit_select">X</span>
+									</div>
+									<div class="address_item">
+									</div>
+								</div>
+							</div>
+							<span class="sg_show_haveGood fl">有货</span>
+							<span class="sg_show_support fl">支持</span>
+							<span class="sg_show_pay fl">货到付款</span>
+						</div>
+						<div class="sg_main_show_right_bottomB clearfix" >
+							<span class="sg_show_buynow">立即购买</span>
+							<span id="sg_show_addCar">加入购物车</span>
+							<span class="sg_online_sever">在线客服</span>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 预约到门店提货 -->
+			<div class="sg_container_main_yymd">
+				<div class="sg_yymd_title">预约到门店提货</div>
+				<div class="sg_yymd_nearStore">
+					<div class="sg_yymd_nearCount">您附近有<span class="sg_yymd_nearCount_num">15</span>家门店</div>
+					<ul class="sg_yymd_allStore clearfix">
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+						<li class="sg_yymd_single">
+							<span class="sg_yymd_storeName">深圳华强店（福田区）</span>
+							<span class="sg_yymd_canBuy">有货</span>
+							<a href="" class="sg_yymd_seeMap">查看地图</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 配件推荐 相关商品-->
+			<div id="returnTop" class="sg_container_main_adjunct">
+				<div class="sg_adjunct_title clearfix">
+					<div class="sg_adjunct_pjtj sg_adjunct_title1 fl ">配件推荐</div>
+					<div class="sg_adjunct_xgsp sg_adjunct_title1 fl ">相关商品</div>
+				</div>
+				<div class="sg_adjunct_contectBox">
+					<!-- 配件推荐 -->
+					<div class="sg_pjtj_contect sg_adjunct_title2">
+						<div class="sg_pjtj_title">配件</div>
+						<form action="">
+							<ul class="sg_pjtj_items clearfix">
+								<li class="sg_pjtj_item fl">
+									<div class="sg_pjtj_item_top"><a href=""><img src="images/sgImg/1_8.jpg" alt="" class="sg_pjtj_pic"></a></div>
+									<div class="sg_pjtj_item_bottom">
+										<h3><a href="" class="sg_pjtj_name">微软（Microsoft）Designer 蓝牙鼠标</a></h3>
+										<div class="sg_pjtj_check"><input type="checkbox" id="sg_pjtj_price1"><label for="sg_pjtj_price1">￥988.00</label></div>
+									</div>
+								</li>
+								<div class="sg_pjtj_add fl" >+</div>
+								<li class="sg_pjtj_item fl">
+									<div class="sg_pjtj_item_top"><a href=""><img src="images/sgImg/1_8.jpg" alt="" class="sg_pjtj_pic"></a></div>
+									<div class="sg_pjtj_item_bottom">
+										<h3><a href="" class="sg_pjtj_name">微软（Microsoft）Designer 蓝牙鼠标</a></h3>
+										<div class="sg_pjtj_check"><input type="checkbox" id="sg_pjtj_price2"><label for="sg_pjtj_price2">￥988.00</label></div>
+									</div>
+								</li>
+								<div class="sg_pjtj_add fl" >+</div>
+								<li class="sg_pjtj_item fl">
+									<div class="sg_pjtj_item_top"><a href=""><img src="images/sgImg/1_8.jpg" alt="" class="sg_pjtj_pic"></a></div>
+									<div class="sg_pjtj_item_bottom">
+										<h3><a href="" class="sg_pjtj_name">微软（Microsoft）Designer 蓝牙鼠标</a></h3>
+										<div class="sg_pjtj_check"><input type="checkbox" id="sg_pjtj_price3"><label for="sg_pjtj_price3">￥988.00</label></div>
+									</div>
+								</li>
+								<div class="sg_pjtj_add fl" >+</div>
+								<li class="sg_pjtj_item fl">
+									<div class="sg_pjtj_item_top"><a href=""><img src="images/sgImg/1_8.jpg" alt="" class="sg_pjtj_pic"></a></div>
+									<div class="sg_pjtj_item_bottom">
+										<h3><a href="" class="sg_pjtj_name">微软（Microsoft）Designer 蓝牙鼠标</a></h3>
+										<div class="sg_pjtj_check"><input type="checkbox" id="sg_pjtj_price4"><label for="sg_pjtj_price4">￥988.00</label></div>
+									</div>
+								</li>
+								<div class="sg_pjtj_dengyu fl">=</div>
+								<div class="sg_pjtj_area fl">
+									<div class="sg_pjtj_area1"><i>已 选 择：</i><em><b>2</b> 件配件</em></div>
+									<div class="sg_pjtj_area2"><i>套餐价格</i><em>￥17835.00</em></div>
+									<div class="sg_pjtj_nowbtn">立即购买</div>
+								</div>
+							</ul>
+						</form>
+					</div>
+					<!-- 相关商品内容 -->
+					<ul class="sg_xgsp_contect sg_adjunct_title2 clearfix">
+						<li class="sg_xgsp_item">
+							<div class="sg_xgsp_item_top">
+								<a href=""><img src="images/sgImg/1_9.jpg" alt="" class="sg_xgsp_pic"></a>
+							</div>
+							<div class="sg_xgsp_item_bottom">
+								<h3><a href="" class="sg_xgsp_name">微软（Microsoft）Surface Book2 13.5英寸二合一平板（Intel core i7-8650U/16GB系统内存/512GB固态硬盘/GTX 1050独立显卡）"</a></h3>
+								<p class="sg_xgsp_price">￥20,388.00</p>
+							</div>
+						</li>
+						<li class="sg_xgsp_item">
+							<div class="sg_xgsp_item_top">
+								<a href=""><img src="images/sgImg/1_9.jpg" alt="" class="sg_xgsp_pic"></a>
+							</div>
+							<div class="sg_xgsp_item_bottom">
+								<h3><a href="" class="sg_xgsp_name">微软（Microsoft）Surface Book2 13.5英寸二合一平板（Intel core i7-8650U/16GB系统内存/512GB固态硬盘/GTX 1050独立显卡）"</a></h3>
+								<p class="sg_xgsp_price">￥20,388.00</p>
+							</div>
+						</li>
+						<li class="sg_xgsp_item">
+							<div class="sg_xgsp_item_top">
+								<a href=""><img src="images/sgImg/1_9.jpg" alt="" class="sg_xgsp_pic"></a>
+							</div>
+							<div class="sg_xgsp_item_bottom">
+								<h3><a href="" class="sg_xgsp_name">微软（Microsoft）Surface Book2 13.5英寸二合一平板（Intel core i7-8650U/16GB系统内存/512GB固态硬盘/GTX 1050独立显卡）"</a></h3>
+								<p class="sg_xgsp_price">￥20,388.00</p>
+							</div>
+						</li>
+						<li class="sg_xgsp_item">
+							<div class="sg_xgsp_item_top">
+								<a href=""><img src="images/sgImg/1_9.jpg" alt="" class="sg_xgsp_pic"></a>
+							</div>
+							<div class="sg_xgsp_item_bottom">
+								<h3><a href="" class="sg_xgsp_name">微软（Microsoft）Surface Book2 13.5英寸二合一平板（Intel core i7-8650U/16GB系统内存/512GB固态硬盘/GTX 1050独立显卡）"</a></h3>
+								<p class="sg_xgsp_price">￥20,388.00</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 商品详细介绍 -->
+			<div class="sg_container_main_detail clearfix">
+				<!-- 左边同类商品列表 -->
+				<div class="sg_detail_sameType fl">
+					<div class="sg_detail_sameType_title">同类商品推荐</div>
+					<ul class="sg_detail_sameType_box">
+						
+					</ul>
+				</div>
+				<!-- 右边详细介绍 -->
+				<div class="sg_detail_infor fl">
+					<!-- 右边 tag -->
+					<ul class="sg_detail_infor_tag clearfix" id="whelltitle">
+						<li class="sg_tag_hd">
+							<a href="###" class="sg_hd_link" >产品介绍</a>
+						</li>
+						<li class="sg_tag_hd">
+							<a href="###" class="sg_hd_link">规格参数</a>
+						</li>
+						<li class="sg_tag_hd">
+							<a href="###" class="sg_hd_link">售后服务</a>
+						</li>
+						<li class="sg_tag_hd">
+							<a href="###" class="sg_hd_link">精彩问答</a>
+						</li>
+						<li class="sg_tag_hd">
+							<a href="###" class="sg_hd_link">商品评论</a>
+						</li>
+						<li class="sg_tag_hd">
+							<a href="###" class="sg_hd_link">了解顺电</a>
+						</li>
+					</ul>
+					<!-- 右边下部分 -->
+					<div class="sg_product_section">
+						<!-- 右边 产品介绍模块 -->
+						<div id="product_detail" class="product-section product-detail" style="display: block;">
+							<div class="product_detail_img1">
+							</div>
+						</div>
+						<!-- 右边 规格参数模块 -->
+						<div id="product_parameters" class="product-section product-parameters">
+							<div class="sg_guigecs">规格参数</div>
+							<table>
+								<tbody>
+								    <tr>
+									    <th colspan="2" class="section-hd">主体</th>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">包装清单</td>
+									    <td>主机x1、耳机x1、数据线x1、充电器x1、SIM卡通针x1、保护套x1、产品信息手册及保修卡x1</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">品牌</td>
+									    <td>OPPO</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">型号</td>
+									    <td>R11s Plus</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">上市年份</td>
+									    <td>2017年11月</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">输入方式</td>
+									    <td>触控</td>
+									</tr>
+								    <tr>
+									    <th colspan="2" class="section-hd">网络</th>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">4G网络制式</td>
+									    <td>4G：移动（TD-LTE)；4G：联通(FDD-LTE)；4G：电信(FDD-LTE)；4G：联通(TD-LTE)</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">3G网络制式</td>
+									    <td>3G：移动(TD-SCDMA)；3G：联通(WCDMA)；3G：电信(CDMA2000)；</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">2G网络制式</td>
+									    <td>2G：移动（GSM）+联通(GSM)；2G：电信(CDMA)；</td>
+									</tr>
+								    <tr>
+									    <th colspan="2" class="section-hd">存储</th>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">机身内存</td>
+									    <td>64GB</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">运行内存</td>
+									    <td>6GB</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">储存卡类型</td>
+									    <td>支持MicroSD（TF）</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">最大存储扩展</td>
+									    <td>256GB</td>
+									</tr>
+								    <tr>
+									    <th colspan="2" class="section-hd">显示</th>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">屏幕尺寸</td>
+									    <td>6.43英寸</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">分辨率</td>
+									    <td>2160*1080(FHD)</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">屏幕材质</td>
+									    <td>AMOLED</td>
+									</tr>
+									<tr>
+									    <th colspan="2" class="section-hd">感应器</th>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">GPS模块</td>
+									    <td>支持</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">重力感应</td>
+									    <td>支持</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">光线感应</td>
+									    <td>支持</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">距离感应</td>
+									    <td>支持</td>
+									</tr>
+								    <tr>
+									    <th colspan="2" class="section-hd">摄像功能</th>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">后置摄像头</td>
+									    <td>1600万像素；2000万像素</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">前置摄像头</td>
+									    <td>2000万像素,f/2.0</td>
+									</tr>
+								    <tr>
+									    <th colspan="2" class="section-hd">娱乐功能</th>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">音乐播放</td>
+									    <td>支持</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">视频播放</td>
+									    <td>支持</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">录音</td>
+									    <td>支持</td>
+									</tr>
+								    <tr>
+									    <th colspan="2" class="section-hd">传输功能</th>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">Wi-Fi</td>
+									    <td>支持</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">蓝牙</td>
+									    <td>支持</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">WIFI热点</td>
+									    <td>支持</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">NFC（近场通讯）</td>
+									    <td>不支持</td>
+									</tr>
+								    <tr>
+									    <th colspan="2" class="section-hd">其他</th>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">SIM卡尺寸</td>
+									    <td>Nano SIM</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">电池类型</td>
+									    <td>锂电池</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">电池容量（mAh）</td>
+									    <td>4000mAh（典型值）</td>
+									</tr>
+								    <tr>
+									    <td class="item-ttl">机身尺寸（mm）</td>
+									    <td>164.8*80.2*7.3mm</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 右边 售后服务模块 -->
+						<div id="product_shouhou" class="product-section product-shouhou">
+							<p class="product_shouhou_info">承诺保证：</p>
+							<p class="product_shouhou_info">本产品全国联保，享受三包服务，质保期为：保修1年</p>
+							<p class="product_shouhou_info"class="product_shouhou_info">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，可享受7日内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务（软件/耗材/一次性用品不在保修范围之内）！</p>
+							<p class="product_shouhou_info">在顺电购买商品，更可享受30天退换货（自购买日起计算），手机激活后将不适用无理由退换货规定，须保证包装商品完好、齐全，不影响二次销售（人为损坏、定制商品、消耗器材不属于此范围之中）。</p>
+							<br>
+							<p class="product_shouhou_info">售前热线：400-8899-618（08:30-18:00 周一至周日）</span></p>
+							<p class="product_shouhou_info">售后电话：400-6788-688（09:00-20:00 周一至周日），<a href="" class="sg_learnMore" >了解更多售后政策请点击</a>&gt;&gt;</span></p>
+						</div>
+						<!-- 右边 精彩问答模块 -->
+						<div id="product_consult" class="product-section product-consult">
+							<div class="sg_product_consult_top clearfix">
+								<ul class="consult_top_tabs fl">
+									<li>
+										<a href="" class="sg_tabs_jcwd">全部问答(3)</a>
+									</li>
+									<li >
+										<a href="" class="sg_tabs_jcwd">商品咨询(3)</a>
+									</li>
+									<li >
+										<a href="" class="sg_tabs_jcwd">订单配送(0)</a>
+									</li>
+									<li >
+										<a href="" class="sg_tabs_jcwd">售后服务(0)</a>
+									</li>
+								</ul>
+								<div class="sg_fb_request fl">发表提问</div>
+							</div>
+							<div class="sg_consult_bottomBox">
+								<!-- 全部问答 -->
+								<ul class="sg_product_consult_bottom consult_bottom1">
+									<li class="sg_jcwd_item">
+										<p class="sg_jcwd_question">请问索尼wi-1000x是国行吗？</p>
+										<div class="sg_jcwd_replay">
+											<p class="sg_jcwd_return">顺电 回复</p>
+											<p class="sg_jcwd_content">尊敬的顺电会员，您好，索尼WI-1000X是国行的呢，感谢您对顺电的支持，祝您生活愉快~</p>
+											<p class="sg_jcwd_time">17-11-07 09:18</p>
+										</div>
+										<div class="sg_jcwd_item_count">
+											<span>已有1条回复 </span>
+											<span> 17-11-06 21:19</span>
+										</div>
+									</li>
+									<li class="sg_jcwd_item">
+										<p class="sg_jcwd_question">请问索尼wi-1000x是国行吗？</p>
+										<div class="sg_jcwd_replay">
+											<p class="sg_jcwd_return">顺电 回复</p>
+											<p class="sg_jcwd_content">尊敬的顺电会员，您好，索尼WI-1000X是国行的呢，感谢您对顺电的支持，祝您生活愉快~</p>
+											<p class="sg_jcwd_time">17-11-07 09:18</p>
+										</div>
+										<div class="sg_jcwd_item_count">
+											<span>已有1条回复 </span>
+											<span> 17-11-06 21:19</span>
+										</div>
+									</li>
+								</ul>
+								<!-- 商品咨询 -->
+								<ul class="sg_product_consult_bottom consult_bottom2">
+									<li class="sg_jcwd_item">
+										<p class="sg_jcwd_question">请问索尼wi-1000x是国行吗？</p>
+										<div class="sg_jcwd_replay">
+											<p class="sg_jcwd_return">顺电 回复</p>
+											<p class="sg_jcwd_content">尊敬的顺电会员，您好，索尼WI-1000X是国行的呢，感谢您对顺电的支持，祝您生活愉快~</p>
+											<p class="sg_jcwd_time">17-11-07 09:18</p>
+										</div>
+										<div class="sg_jcwd_item_count">
+											<span>已有1条回复 </span>
+											<span> 17-11-06 21:19</span>
+										</div>
+									</li>
+									<li class="sg_jcwd_item">
+										<p class="sg_jcwd_question">请问索尼wi-1000x是国行吗？</p>
+										<div class="sg_jcwd_replay">
+											<p class="sg_jcwd_return">顺电 回复</p>
+											<p class="sg_jcwd_content">尊敬的顺电会员，您好，索尼WI-1000X是国行的呢，感谢您对顺电的支持，祝您生活愉快~</p>
+											<p class="sg_jcwd_time">17-11-07 09:18</p>
+										</div>
+										<div class="sg_jcwd_item_count">
+											<span>已有1条回复 </span>
+											<span> 17-11-06 21:19</span>
+										</div>
+									</li>
+								</ul>
+								<!-- 订单配送 -->
+								<div class="consult_bottom3">订单配送</div>
+								<!-- 售后服务 -->
+								<div class="consult_bottom4">售后服务</div>
+							</div>
+						</div>
+						<!-- 右边 商品评论模块 -->
+						<div id="product_comment" class="product-section product-comment">
+							<ul class="sg_jundeg">
+							</ul>
+						</div>
+						<!-- 右边 了解顺电模块 -->
+						<div id="product_know" class="product-section product-know" style="display: none;">
+							<div><img src="images/sgImg/learn_shundian.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 这是 尾部 开始 -->
+	<footer>
+		<div class="footer_wrap">
+			<div class="footer_top clearfix">
+				<ul class="fl">
+					<li class="footer_top_shop">商城客服热线</li>
+					<li class="footer_top_time">商城服务时间08:30 - 17:30</li>
+					<li class="footer_top_phone">400-8899-618</li>
+				</ul>
+				<ul class="fl">
+					<li class="footer_top_shop">企业购热线</li>
+					<li class="footer_top_time">企业购热线时间: 09:00 - 17:30</li>
+					<li class="footer_top_phone">0755-83286903</li>
+				</ul>
+				<ul class="fl">
+					<li class="footer_top_shop">售后服务热线</li>
+					<li class="footer_top_time">售后热线时间: 09:00 - 22:00</li>
+					<li class="footer_top_phone">400-6788-688</li>
+				</ul>
+				<ul class="fl">
+					<li class="footer_top_shop">在线客服咨询</li>
+					<li class="footer_top_time">服务时间: 08:30 - 24:00</li>
+					<li class="footer_top_phone">400-8899-618</li>
+				</ul>
+			</div>
+			<div class="footer_bottom">
+				<div class="clearfix">
+					<ul class="fl">
+						<li class="newPeople">新手指引</li>
+						<li><a href="###">交易须知</a></li>
+						<li><a href="###">开具发票</a></li>
+						<li><a href="###">联系客服</a></li>
+						<li><a href="###">会员登录小贴士</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="pay"><a href="###">支付及配送</a></li>
+						<li><a href="###">在线支付</a></li>
+						<li><a href="###">汇款转账</a></li>
+						<li><a href="###">到货付款</a></li>
+						<li><a href="###">运费政策</a></li>
+						<li><a href="###">配送方式</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="pay"><a href="###">订单及售后</a></li>
+						<li><a href="###">订单说明</a></li>
+						<li><a href="###">退款说明</a></li>
+						<li><a href="###">售后政策</a></li>
+						<li><a href="###">售后申请</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="pay"><a href="###">关于顺电</a></li>
+						<li><a href="###">品牌故事</a></li>
+						<li><a href="###">投资者关系</a></li>
+						<li><a href="###">联系方式</a></li>
+						<li><a href="###">网站合作</a></li>
+						<li><a href="###">人才招聘</a></li>
+					</ul>
+					
+					<div class="fl">
+						<p class="newPeople">门店体验店</p>
+						<span>深圳市顺电连锁股份有限公司，是一家专门销售家用电器(包括手机、电脑、数码相机)的零售商。顺电每一家门店有以下特点:高品质商品、丰富选择、专业服务。</span>
+						<ul>
+							<li class="fl"><a href="###">北京</a></li>
+							<li class="fl"><a href="###">上海</a></li>
+							<li class="fl"><a href="###">深圳</a></li>
+							<li class="fl"><a href="###">广州</a></li>
+							<li class="fl"><a href="###">苏州</a></li>
+							<li class="fl"><a href="###">更多</a></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<p class="newPeople">友情链接</p>
+					<a href="###">顺电B2B　</a>
+					<a href="###">顺电网络大学　 </a>
+					<a href="###">智能帮　 </a>
+					<a href="###">有的卖　 </a>
+					<a href="###">设乡味　 </a>
+					<a href="###">慢慢买　 </a>
+					<a href="###">一起惠　 </a>
+				</div>
+			</div>
+			<div class="footer_middle">
+				<p>Copyright 2002-2017. 深圳市顺电连锁股份有限公司 版权所有 粤ICP备13052236号</p>
+				<div class="footer_middle_about clearfix">
+					<div class="footer_about_img fl">
+						<img class="fl" src="images/police.png" alt="">
+						<span class="fl">网上报警</span>
+					</div>
+					<div class="footer_about_img fl">
+						<img class="fl" src="images/gaju.png" alt="">
+						<span class="fl">深圳市公安局</span>
+					</div>
+					<div class="footer_about_img fl">
+						<img class="fl" src="images/gongshang.png" alt="">
+						<span class="fl">工商网监</span>
+					</div>
+					<div class="footer_about_img fl">
+						<img class="fl" src="images/xinlangweibo.png" alt="">
+						<span class="fl">关注微博</span>
+					</div>
+					<div class="fl">
+						<img class="fl" src="images/weixin_footer.png" alt="">
+						<span class="fl">关注官微</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- 这是 尾部 结束 -->
+	<script src="js/jQuery.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/share.js"></script>
+	<script src="js/tween.js"></script>
+	<script src="js/base.js"></script>
+	<script src="js/singleGood.js"></script>
+</body>
+</html>

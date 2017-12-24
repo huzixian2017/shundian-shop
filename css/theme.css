@@ -1,0 +1,16 @@
+.theme_area{
+	width: 1230px;
+	margin: 10px auto;
+}
+.theme_area li{
+	width: 600px;
+	height: 300px;
+	box-shadow: 0px 5px 5px 2px #c8c8c8;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.theme_area li img:hover{
+	transform:scale(1.1);
+}

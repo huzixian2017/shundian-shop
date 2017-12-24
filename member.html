@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心</title>
+		<link rel="stylesheet" href="css/public.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/member.css">
+		<link rel='icon' href='http://www.sundan.com/public/app/site/statics/favicon.ico' type='image/x-icon' />
+	</head>
+	<body>
+		<!-- 这是 头部 开始 -->
+		<header class="clearfix">
+			<h1 class="fl"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+			<div class="header_search fl">
+				<div class="header_search_inp fl">
+					<img src="images/search.png" alt="">
+					<input class="header_inp" type="text">
+				</div>
+				<div class="header_btn"><a href="###">搜索</a></div>
+				<ul class="header_hotlist"></ul>
+			</div>
+			<div class="header_onload fl">
+				<!-- 用户登陆状态 -->
+				<div class="header_load" style="display: block;text-align: center;line-height: 40px;font-size: 20px;color: #00bad6;">
+					<span class="loag_name"></span>
+				</div>
+				<!-- 用户未登陆状态 -->
+				<div class="header_unload" style="display: none;">
+					<a class="header_unload_regist" href="###">注册</a>
+					<a class="header_unload_load" href="###">登陆</a>
+				</div>
+			</div>
+			<div class="header_car fl">
+				<a href="cart.html">
+					<div class="header_car_num">0</div>		
+				</a>
+			</div>
+		</header>
+		<!-- 这是 头部 结束 -->
+		<!-- 这是 导航 开始 -->
+		<div class="nav">
+			<ul class="nav_list clearfix">
+				<li class="nav_list_special fl">
+					<a class="nav_list_a" href="###">所 有 商 品 信 息</a>
+					<ul class="nav_list_ul"></ul>
+					<table>
+						<tr class="title2"><td></td></tr>
+						<tr class="ad">
+							<td>
+								<a href="###"></a>
+								<a href="###"></a>
+								<a href="###"></a>
+							</td>
+						</tr>
+					</table>
+				</li>
+				<li class="fl"><a href="###">首页</a></li>
+				<li class="fl"><a href="###">新品</a></li>
+				<li class="fl"><a href="###">家</a></li>
+				<li class="fl"><a href="###">进口</a></li>
+				<li class="fl"><a href="###">限时特惠</a></li>
+				<li class="fl"><a href="###">Apple</a></li>
+				<li class="fl"><a href="###">主题馆</a></li>
+				<li class="fl"><a href="###">品牌街</a></li>
+				<li class="fl"><a href="###">以旧换新</a></li>
+				<li class="fl"><a href="###">顺电APP</a></li>
+			</ul>	
+		</div>
+		<!-- 主体部分 -->
+		<!-- 头部 welcome -->
+		<div class="member_welcome clearfix">
+			<div class="member_welcome_left">
+				<div class="member_img">
+					<img src="images/memberImg/tx01.png" alt="">
+				</div>	
+			</div>
+			<div class="member_welcome_center">
+				<h1></h1>
+				<span class="member_welcome_deg"><img src="images/memberImg/huiyuan.png" alt=""></span>
+				<span class="member_welcome_deg">VIP1</span>
+			</div>
+			<div class="member_welcome_right">
+				<h1>您好，欢迎光临顺电！</h1>
+			</div>
+		</div>
+		<!-- 内容部分 -->
+		<div class="member_container">
+			<div class="member_inner_wrap">
+				<div class="member_main clearfix">
+					<!-- 侧边栏 -->
+					<div class="member_aside fl">
+						<div class="member_menu">
+							<!-- 交易管理 -->
+							<div class="member_menu_mod" id="member_rwo" style="background: url('images/memberImg/guanli.png') scroll 5px 2px no-repeat;">
+						        <h2 class="member_menu_title hasClick" style="  background: url('images/memberImg/member-up.png') scroll right center no-repeat;">交易管理</h2>
+						        <ul class="member_menu_list show">
+						            <li class="match_qiehuan left_myOrder">
+						              <a href="###">我的订单</a>
+						            </li>
+						            <li>
+						              <a href="">申请退换</a>
+						            </li>
+						        </ul>
+						    </div>
+						    <!-- 评论咨询管理 -->
+						    <div class="member_menu_mod" id="member_rwo" style="background: url('images/memberImg/zixun.png') scroll 5px 2px no-repeat;">
+						        <h2 class="member_menu_title hasClick" style="  background: url('images/memberImg/member-up.png') scroll right center no-repeat;">评论咨询管理</h2>
+						        <ul class="member_menu_list show">
+						            <li>
+						              <a href="">未评论商品</a>
+						            </li>
+						            <li>
+						              <a href="">评论与咨询</a>
+						            </li>
+						        </ul>
+						    </div>
+						    <!-- 我的账户 -->
+						    <div class="member_menu_mod" id="member_rwo" style="background: url('images/memberImg/zhanghu.png') scroll 5px 2px no-repeat;">
+						        <h2 class="member_menu_title hasClick" style="  background: url('images/memberImg/member-up.png') scroll right center no-repeat;">我的账户</h2>
+						        <ul class="member_menu_list show">
+						            <li class="match_qiehuan favor_infor">
+						              <a href="###">商品收藏</a>
+						            </li>
+						            <li>
+						              <a href="">到货通知</a>
+						            </li>
+						            <li>
+						              <a href="">我的优惠券</a>
+						            </li>
+						            <li>
+						              <a href="">我的顺电钱包</a>
+						            </li>
+						            <li>
+						              <a href="">顺电钱包充值</a>
+						            </li>
+						             <li>
+						              <a href="">积分兑换优惠券</a>
+						            </li>
+						             <li>
+						              <a href="">我的积分</a>
+						            </li>
+						        </ul>
+						    </div>
+						    <!-- 个人信息管理 -->
+						    <div class="member_menu_mod" id="member_rwo" style="background: url('images/memberImg/geren.png') scroll 5px 2px no-repeat;">
+						        <h2 class="member_menu_title hasClick" style="  background: url('images/memberImg/member-up.png') scroll right center no-repeat;">个人信息管理</h2>
+						        <ul class="member_menu_list show">
+						            <li>
+						              <a href="">站内信</a>
+						            </li>
+						            <li class="left_information match_qiehuan">
+						              <a href="###">个人信息</a>
+						            </li>
+						            <li class="match_qiehuan">
+						              <a href="###">安全中心</a>
+						            </li>
+						            <li class="match_qiehuan " id="left_address">
+						              <a href="###">收货地址</a>
+						            </li>
+						        </ul>
+						    </div>
+						</div>
+					</div>
+					<!-- 右边详细内容 -->
+					<div class="member_article">
+						<!-- 初始界面 -->
+						<div class="member_first_in" id="first_face">
+							<!-- 初始界面上部 -->
+							<div class="member_wel">
+								<div class="member_wel_content">
+									<div class="member_wel_tips">
+										您好<em></em>，欢迎进入会员中心
+									</div>
+									<ul class="member_wel_desc">
+										<li>您目前是：<b>[VIP1]</b></li>
+										<li>经验值是：<i>0</i>（经验值累积到<i>50000</i>可成为VIP2）</li>
+										<li>账户总积分：<strong>0</strong>分 <a href="">查看积分记录 »</a></li>
+										<li>顺电钱包余额：<strong>￥0.00</strong> <a href="">顺电钱包充值 »</a></li>
+									</ul>
+								</div>
+								<div class="member_wel_alert">
+									交易提醒：<a href="" class="member_alert_item">未付款订单<span class="member_alert_disable" id="hasnot_pay">1</span></a><a href="###" class="member_alert_item">预售订单<span class="member_alert_label">0</span></a><a href="###" class="member_alert_item">到货通知<span class="member_alert_label">0</span></a><a href="###" class="member_alert_item">评论回复<span class="member_alert_label">0</span></a><a href="###" class="member_alert_item">咨询回复<span class="member_alert_label">0</span></a>
+								</div>
+							</div>
+							<!-- 最近的订单信息 -->
+							<div class="member_orders">
+								<!-- 订单头部 -->
+								<div class="member_order_title">
+									<h2 >最近的订单</h2>
+									<a href="">查看所有订单 »</a>
+								</div>
+								<!-- 订单内容 -->
+								<div class="member_order_content ">
+									<!-- 每一张订单信息 -->
+									<!-- 第一份订单 -->
+									<!-- 第二份订单 -->
+								</div>
+							</div>
+						</div>
+						<!-- 我的订单界面 -->
+						<div class="member_myorder member_qiehuan" style="display: none;">
+							<!-- 订单步骤导航 -->
+							<div class="myorder_step" style="padding-left: 20px;font-size: 12px;color: #3c3e3e;line-height: 45px;">
+								您的当前位置：<a href="">会员中心</a><span>></span><span>我的订单</span>
+							</div>
+							<div class="member_orders">
+								<!-- 订单头部 -->
+								<div class="myorder_title" style=" background-color: #e5e5e5;overflow: hidden;height: 45px;">
+									<div style="height: 48px;line-height: 48px;font-size: 18px;color: #000; padding-left: 65px;background: url(images/memberImg/order-img.png) scroll 20px center no-repeat #e5e5e5;">所有订单</div>
+								</div>
+								<!-- 订单内容 -->
+								<div class="member_order_content">
+									<!-- 每一张订单信息 -->
+									<!-- 第一份订单 -->
+									<!-- 第二份订单 -->
+								</div>
+								<!-- 评论模块 -->
+								<div class="goods_judget">
+									<div class="comment_text">
+										<textarea cols="30" rows="10" placeholder="请在此填写您对该订单或商品的评论，最多300字。" id="goods_comment"></textarea>
+									</div>
+									<input type="button" value="取消" id="no_common_btn">
+									<input type="button" value="提交" id="yes_common_btn">
+								</div>
+								<div class="file_common">您已评论过该商品</div>
+							</div>
+						</div>
+						<!-- 商品收藏模块 -->
+						<div class="member_favor member_qiehuan" style="display: none;">
+							<!-- 收藏步骤导航 -->
+							<div class="favor_step" style="padding-left: 20px;font-size: 12px;color: #3c3e3e;line-height: 45px;">
+								您的当前位置：<a href="">会员中心</a><span> > </span><span>商品收藏</span>
+							</div>
+							<!-- 收藏内容 -->
+							<form action="" method="post" style="background-color: #fff;">
+								<!--全选 全部商品 -->
+								<div class="favor_title">
+									<div class="alltext">全部商品（<span id="ckeckall_num">1</span>）</div>
+									<div class="favor_title_b">
+										<input type="checkbox" id="favor_ckeckall">
+										<label for="favor_ckeckall">全选</label>
+										<span class="favor_delete" style="background:url('images/memberImg/delete.png') 10px 2px no-repeat;padding:0 30px;cursor: pointer;">删除</span>
+									</div>
+								</div>
+								<!-- 单个商品 -->
+								<ul class="favor_ul clearfix">
+								</ul>
+							</form>
+						</div>
+						<!-- 个人信息模块 -->
+						<div class="member_information member_qiehuan" style="display: none;">
+							<!-- 个人信息步骤导航 -->
+							<div class="information_step" style="padding-left: 20px;font-size: 12px;color: #3c3e3e;line-height: 45px;">
+								您的当前位置：<a href="">会员中心</a><span> > </span><span>个人信息</span>
+							</div>
+							<!-- 个人信息填写区域 -->
+							<div class="information_title">
+								个人信息
+							</div>
+							<div class="information_main">
+								<div class="information_tx fl">
+									<img src="images/memberImg/tx08.png" alt="">
+								</div>
+								<form action="http://139.199.79.192:8081/ShunDian/update.do" method="get" name="form_geren" id="saveReportForm" id="showDataForm" onsubmit="return saveReport();">
+									<ul class="information_ul">
+										<li class="information_li">
+											<label for="">用户名</label><span id="username">hzx1995
+										</li>
+										<li class="information_li">
+											<label for=""><em class="information_warn">*</em>姓名</label>
+											<input type="text" name="xName" id="warn_name">
+										</li>
+										<li class="information_li" id="select_box">
+											<label for="">地区</label>
+											<select name="cityid" id="select_area">
+												<option value="_NULL_">请选择</option>
+											</select>
+										</li>
+										<li class="information_li">
+											<label for=""><em>*</em>性别</label>
+											<span>
+												<input type="radio" name="gender" value="male" id="male">
+												<label for="male" style="width: 20px;">男</label>
+												<input type="radio" name="gender" value="female" id="female">
+												<label for="female" style="width: 20px;">女</label>
+											</span>
+										</li>
+										<li class="information_li">
+											<label for="QQ">QQ：</label>
+											<input type="text" name="QQ" id="QQ">
+										</li>
+										<li class="information_li">
+											<label for="mobile">手机号</label>
+											<input type="text" name="uPhone" id="mobile">
+										</li>
+										<li class="information_li">
+											<label for="emile">邮箱</label>
+											<input type="text" name="email" id="emile">
+										</li>
+										<li class="information_li">
+											<input type="button" value="保存" class="save" id="save" >
+										</li>
+									</ul>
+								</form>
+							</div>
+						</div>
+						<!-- 安全中心模块 -->
+						<div class="member_safe member_qiehuan" style="display: none;">
+							<!-- 收货地址步骤导航 -->
+							<div class="safe_step" style="padding-left: 20px;font-size: 12px;color: #3c3e3e;line-height: 45px;">
+								您的当前位置：<a href="" style="color: #3c3e3e;">会员中心</a><span> > </span><span>安全中心</span>
+							</div>
+							<!-- 安全中心头 -->
+							<div class="safe_title">
+								用户名：hzx1995&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绑定手机号：188****7135
+							</div>
+							<!-- 安全中心修改 -->
+							<div class="safe_content" style="background-color: #fff;overflow: hidden;min-height: 520px;padding-bottom: 20px">
+								<form action="" method="post">
+									<ul class="safe_list">
+										<li class="safe_item">
+											<span class="safe_name"><i class="has_set">已设置</i><b>登录密码</b></span>
+											<span class="safe_des">请经常更换您的登录密码，且不要和其他账号共用一个密码</span>
+											<span id="safe_update">修改</span>
+											<!-- 点击修改新密码 -->
+											<div id="update_step1" class="update_step">
+												请输入登录密码：<input type="password" id="old_password" value="">
+												<input type="button" value="下一步" id="next_step">
+												<input type="button" value="取消" id="off_update">
+											</div>
+											<div id="update_step2" class="update_step">
+												请输入新密码：<input type="password" id="new_password">
+												<span>要求：6-20个字符，必须包含数字和大小写字母</span>
+												<input type="button" value="提交" id="last_step">
+											</div>
+											<div id="write_filed"><span>密码错误，与登录密码不同</span></div>
+											<div id="update_filed"><span>修改失败</span></div>
+											<div id="update_success"><span>修改成功</span></div>
+										</li>
+									</ul>
+								</form>
+							</div>
+						</div>
+						<!-- 收货地址模块 -->
+						<div class="member_address member_qiehuan" style="display: none;">
+							<!-- 收货地址步骤导航 -->
+							<div class="address_step" style="padding-left: 20px;font-size: 12px;color: #3c3e3e;line-height: 45px;">
+								您的当前位置：<a href="" style="color: #3c3e3e;">会员中心</a><span> > </span><span>个人信息</span>
+							</div>
+							<!-- 收货地址内容 -->
+							<div class="address_content">
+								<!-- 收货地址头部 -->
+								<div class="address_title">
+									已保存的收货地址
+									<div id="add_address_btn">
+										<input type="button" id="addBtn" value="+添加收货地址" />
+									</div>
+								</div>
+								<!-- 收货地址详情 table -->
+								<div class="table_box" style="background-color: #fff;overflow: hidden;min-height: 520px;padding-bottom: 20px">
+									<div class="address_table">
+										<table class="address_grid">
+									        <thead>
+									            <tr>
+									          	  	<th>收货人</th>
+										            <th>所在地区</th>
+										            <th>详细地址</th>
+										            <th>邮编</th>
+										            <th>电话/手机号</th>
+										            <th>操作</th>
+									            </tr>
+									        </thead>
+							                <tbody class="tbody_first">
+						                  </tbody>
+						              </table>
+									</div>
+								</div>
+							</div>
+							<!-- 添加新的收货信息 固定定位 -->
+							<div id="replay_address">
+								<div id="exit_addAddress" style="position: absolute; top:24px;left:616px;width: 25px;height:25px;"></div>
+								<h2 class="replay_address_title">
+									添加收货地址
+								</h2>
+								<div class="replay_memberinfo">
+									<ul>
+										<li class="replay_list">
+											<label for="">收货人<em> * </em></label>
+											<input type="text" id="sName">
+										</li>
+										<li class="replay_list">
+											<label for="">收货地址<em> * </em></label>
+											<span class="region">
+												<select id="x_0" class="x_select">
+													<option value="_NULL_">请选择</option>
+												</select>
+											</span>
+										</li>
+										<li class="replay_list">
+											<label for="">&nbsp;&nbsp;&nbsp;</label>
+											<input type="text" id="all_address" style="width: 350px;padding-left:5px;">
+										</li>
+										<li class="replay_list">
+											<label for="">邮编：</label>
+											<input type="text" id="add_sZip">
+										</li>
+										<li class="replay_list">
+											<label for="">手机号码<em>*</em></label>
+											<input type="text" id="add_sPhone">
+										</li>
+										<li class="replay_list" style="text-align: center;">
+											<input type="button" value="确定" id="yes_btn">
+											<input type="button" value="取消" id="no_btn">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 这是 尾部 开始 -->
+	<footer>
+		<div class="footer_wrap">
+			<div class="footer_top clearfix">
+				<ul class="fl">
+					<li class="footer_top_shop">商城客服热线</li>
+					<li class="footer_top_time">商城服务时间08:30 - 17:30</li>
+					<li class="footer_top_phone">400-8899-618</li>
+				</ul>
+				<ul class="fl">
+					<li class="footer_top_shop">企业购热线</li>
+					<li class="footer_top_time">企业购热线时间: 09:00 - 17:30</li>
+					<li class="footer_top_phone">0755-83286903</li>
+				</ul>
+				<ul class="fl">
+					<li class="footer_top_shop">售后服务热线</li>
+					<li class="footer_top_time">售后热线时间: 09:00 - 22:00</li>
+					<li class="footer_top_phone">400-6788-688</li>
+				</ul>
+				<ul class="fl">
+					<li class="footer_top_shop">在线客服咨询</li>
+					<li class="footer_top_time">服务时间: 08:30 - 24:00</li>
+					<li class="footer_top_phone">400-8899-618</li>
+				</ul>
+			</div>
+			<div class="footer_bottom">
+				<div class="clearfix">
+					<ul class="fl">
+						<li class="newPeople">新手指引</li>
+						<li><a href="###">交易须知</a></li>
+						<li><a href="###">开具发票</a></li>
+						<li><a href="###">联系客服</a></li>
+						<li><a href="###">会员登录小贴士</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="pay"><a href="###">支付及配送</a></li>
+						<li><a href="###">在线支付</a></li>
+						<li><a href="###">汇款转账</a></li>
+						<li><a href="###">到货付款</a></li>
+						<li><a href="###">运费政策</a></li>
+						<li><a href="###">配送方式</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="pay"><a href="###">订单及售后</a></li>
+						<li><a href="###">订单说明</a></li>
+						<li><a href="###">退款说明</a></li>
+						<li><a href="###">售后政策</a></li>
+						<li><a href="###">售后申请</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="pay"><a href="###">关于顺电</a></li>
+						<li><a href="###">品牌故事</a></li>
+						<li><a href="###">投资者关系</a></li>
+						<li><a href="###">联系方式</a></li>
+						<li><a href="###">网站合作</a></li>
+						<li><a href="###">人才招聘</a></li>
+					</ul>
+					
+					<div class="fl">
+						<p class="newPeople">门店体验店</p>
+						<span>深圳市顺电连锁股份有限公司，是一家专门销售家用电器(包括手机、电脑、数码相机)的零售商。顺电每一家门店有以下特点:高品质商品、丰富选择、专业服务。</span>
+						<ul>
+							<li class="fl"><a href="###">北京</a></li>
+							<li class="fl"><a href="###">上海</a></li>
+							<li class="fl"><a href="###">深圳</a></li>
+							<li class="fl"><a href="###">广州</a></li>
+							<li class="fl"><a href="###">苏州</a></li>
+							<li class="fl"><a href="###">更多</a></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<p class="newPeople">友情链接</p>
+					<a href="###">顺电B2B　</a>
+					<a href="###">顺电网络大学　 </a>
+					<a href="###">智能帮　 </a>
+					<a href="###">有的卖　 </a>
+					<a href="###">设乡味　 </a>
+					<a href="###">慢慢买　 </a>
+					<a href="###">一起惠　 </a>
+				</div>
+			</div>
+			<div class="footer_middle">
+				<p>Copyright 2002-2017. 深圳市顺电连锁股份有限公司 版权所有 粤ICP备13052236号</p>
+				<div class="footer_middle_about clearfix">
+					<div class="footer_about_img fl">
+						<img class="fl" src="images/police.png" alt="">
+						<span class="fl">网上报警</span>
+					</div>
+					<div class="footer_about_img fl">
+						<img class="fl" src="images/gaju.png" alt="">
+						<span class="fl">深圳市公安局</span>
+					</div>
+					<div class="footer_about_img fl">
+						<img class="fl" src="images/gongshang.png" alt="">
+						<span class="fl">工商网监</span>
+					</div>
+					<div class="footer_about_img fl">
+						<img class="fl" src="images/xinlangweibo.png" alt="">
+						<span class="fl">关注微博</span>
+					</div>
+					<div class="fl">
+						<img class="fl" src="images/weixin_footer.png" alt="">
+						<span class="fl">关注官微</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- 这是 尾部 结束 -->
+		<script src="js/public.js"></script>
+		<script src="js/jQuery.js"></script>
+		<script src="js/member.js"></script>
+	</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>scshop</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/scshop.css">
+	<link rel="stylesheet" href="css/scshop_goods.css">
+	<link rel="stylesheet" href="css/scshop_swiper.css">
+	<link rel="stylesheet" href="css/scshop_order.css">
+	<link rel='icon' href='http://www.sundan.com/public/app/site/statics/favicon.ico' type='image/x-icon' />
+</head>
+<body>
+	<!-- 这是头部开始 -->
+	<header class="clearfix">
+		<div class="header_left fl">
+			<img class="fl" src="images/ecshop_logo.gif" alt="">
+			<span class="fl middle_span"><a href="###"></a></span>
+			<span class="fl bottom_span"><a href="###">[未授权用户]</a></span>
+		</div>
+		<ul class="header_right fr">
+			<li class="fl header_right_first"><a href="###">开店向导</a></li>
+			<li class="fl"><a href="###">记事本</a></li>
+			<li class="fl"><a href="###">刷新</a></li>
+			<li class="fl header_right_sp"><a href="###">个人设置</a>
+				<ul class="header_right_sp_ul">
+					<li><a href="###">个人中心</a></li>
+					<li><a href="###">清除缓存</a></li>
+					<li><a href="###">退出</a></li>
+				</ul>
+			</li>
+			<li class="fl"><a href="###">管理员留言</a></li>
+			<li class="fl"><a href="###">查看网店</a></li>
+			<li class="fl"><a href="###">帮助</a></li>
+			<li class="fl"><a href="###">关于ECSHOP</a></li>
+		</ul>
+	</header>
+	<!-- 这是头部结束 -->
+
+	<!-- 这是导航开始 -->
+	<nav>
+		<ul>
+			<li><a href="###">起始页</a></li>
+			<li><a href="###">设置导航栏</a></li>
+			<li><a href="###">商品列表</a></li>
+			<li><a href="###">订单列表</a></li>
+			<li><a href="###">用户评论</a></li>
+			<li><a href="###">会员列表</a></li>
+			<li><a href="###">商店设置</a></li>
+			<li><a href="###">移动版</a></li>
+			<li><a href="###">服务市场</a></li>
+			<li><a href="###"><img src="images/btn-bind.gif" alt=""></a></li>
+		</ul>
+	</nav>
+	<!-- 这是导航结束 -->
+
+	<!-- 这是侧边导航开始 -->
+	<div class="slide_nav">
+		<div class="slide_nav_head">
+			<p><a href="###">菜单</a></p>
+			<div class="slide_nav_allChecked nav_Checked"><a href="###">+</a></div>
+		</div>
+		<ul class="slide_nav_content">
+			<li class="clearfix">
+				<div class="slide_nav_Checked nav_Checked fl"><a href="###">+</a></div>
+				<div class="fl">
+					<span><a href="###" class="clickactive">首页管理</a></span>
+					<ol class="slide_nav_Checked_ol">
+						<li><a href="###" class="swiper_manage">轮播图管理</a></li>
+						<li><a href="###" class="floor_manage">楼层管理</a></li>
+					</ol>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="slide_nav_Checked nav_Checked fl"><a href="###">+</a></div>
+				<div class="fl">
+					<span><a href="###" class="clickactive">商品管理</a></span>
+					<ol class="slide_nav_Checked_ol">
+						<li><a href="###" class="goods_left goods_list_left">商品列表</a></li>
+						<li><a href="###" class="goods_left goods_common_left">用户评论</a></li>
+						<li><a href="###" class="goods_left goods_recycle_left">商品回收站</a></li>
+					</ol>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="slide_nav_Checked nav_Checked fl"><a href="###">+</a></div>
+				<div class="fl">
+					<span><a href="###" class="clickactive">订单管理</a></span>
+					<ol class="slide_nav_Checked_ol">
+						<li><a href="###">订单列表</a></li>
+					</ol>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- 这是侧边导航结束 -->
+	<!-- 这是主体内容开始 -->
+	<section>
+		<div class="index_manage active">
+			<!-- 这是轮播图管理内容开始 -->	
+			<div class="scshop_swiper">
+				<div class="swiper_header">
+					<a href="###">ECSHOP管理中心</a>
+					<span>轮播图管理</span>
+					<a href="###"></a>
+				</div>
+				<table class="swiper_table">
+					<tr>
+						<th>图片</th>
+						<th>轮播图</th>
+						<th>操作</th>
+					</tr>
+				</table>
+				<div class="swiper_tianjia_hiden">
+					<span class="fl">添加新图片</span>
+					<form action="" method="get" enctype="multipart/form-data" class="fl">
+						<input type="file" name="myFile" id="add_file">
+						<!-- <input type="text" name="" value="" class="add_input"> -->
+	    				<input type="button" value="添加" id="add">
+					</form>
+				</div>
+				<div class="swiper_xiugai_hiden">
+					<span class="fl">修改图片</span>
+					<form action="" method="get" enctype="multipart/form-data" class="fl">
+						<input type="file" name="myFile" id="xiugai_file">
+						<input type="text" name="" value="" class="xiugai_input">
+	    				<input type="button" value="修改" id="xiugai">
+					</form>
+				</div>
+			</div>
+			<!-- 这是轮播图管理内容结束 -->
+			<!-- 这是楼层管理内容开始 -->
+			<div class="scshop_floor">
+				<div class="floor_header">
+					<a href="###">ECSHOP管理中心</a>
+					<span>楼层管理</span>
+					<a href="###" class="floor_add"></a>
+				</div>
+				<table class="floor_table">
+					<tr>
+						<th>楼层</th>
+						<th>楼层名</th>
+						<th>操作</th>
+					</tr>
+				</table>
+			</div>
+			<div class="floor_look">
+				<div class="floor_header">
+					<a href="###">ECSHOP管理中心</a>
+					<span class="look_floor_name"></span>
+					<a href="###"></a>
+				</div>
+				<table class="look_floorimg_table">
+					<tr>
+						<th>图片</th>
+						<th>楼层</th>
+						<th>操作</th>
+					</tr>
+				</table>
+			</div>
+			<div class="floortianjia">
+				<div class="floor_header">
+					<a href="###">ECSHOP管理中心</a>
+					<a href="###"></a>
+				</div>
+				<div class="floor_input_1">
+					<form action="" enctype="multipart/form-data">
+						<input type="file" name="" id="myfile1">
+						<input type="file" name="" id="myfile2">
+						<input type="file" name="" id="myfile3">
+						<input type="file" name="" id="myfile4">
+						<input type="file" name="" id="myfile5">
+						<input type="file" name="" id="myfile6">
+						<input type="file" name="" id="myfile7">
+						<input type="file" name="" id="myfile8">
+						<input type="file" name="" id="myfile9">
+						<div class="floor_tianjia_hiden">
+							<span class="fl">添加楼层</span>
+							<input type="text" name="" value="" class="add_f">
+	    					<input type="button" value="添加" id="add_floor">
+						</div>
+						<div class="floor_xiugai_hiden">
+							<span class="fl">修改楼层</span>
+							id<input type="text" name="" value="" class="xiugai_id">
+							修改内容<input type="text" name="" value="" class="xiugai_f">
+			    			<input type="button" value="修改" id="xiugai_floor">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 这是楼层管理内容结束 -->
+
+		<!-- 这是商品管理内容开始 -->
+		<div class="goods_manage active">
+			<!-- 头部 -->
+			<div class="goods_list_title">
+				<span class="goods_list_span1"><a href="###" class="goods_list_link">ECSHOP管理中心&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+				<span class="goods_list_span1" id="goods_manage_title">商品列表</span>
+			</div>
+			<!-- 商品列表开始 -->
+			<div class="goods_list goods_right" style="display: block;">
+				<!-- 搜索框 -->
+				<div class="goods_list_search">
+					<img src="images/icon_search.gif">
+					<!-- 分类 -->
+					<select id="goods_cat_id">
+						<option value="0">所有分类</option>
+						<option value="5">12</option>
+						<option value="6">13</option>
+						<option value="7">&nbsp;&nbsp;1</option>
+						<option value="8">&nbsp;&nbsp;&nbsp;3</option>
+						<option value="2">电器</option>
+					</select>
+					<!-- 品牌 -->
+					<select id="goods_brand_id">
+						<option value="0">所有品牌</option>
+						<option value="2">asdsad</option>
+						<option value="3">fdxg</option>
+					</select>
+					<!-- 推荐 -->
+					<select id="goods_intro_type">
+						<option value="0">全部</option>
+						<option value="is_best">精品</option>
+						<option value="is_new">新品</option>
+						<option value="is_hot">热销</option>
+						<option value="is_promote">特价</option>
+						<option value="all_type">全部推荐</option>
+					</select>
+					<!-- 上架 -->
+					<select id="goods_is_onsale">
+						<option value="_null_">全部</option>
+						<option value="0">下架</option>
+						<option value="1">上架</option>
+					</select>
+					<span>关键字</span>
+					<input type="text" name="goods_keyword" id="goods_keyword" size="15">
+					<input type="button" value="搜索" class="goods_button">
+				</div>
+				<!-- 商品列表 -->
+				<div class="goods_list_box">
+					<table cellpadding="3" cellspacing="1">
+						<tr>
+							<th><input type="checkbox"><a href="###">编号</a><img src="images/sort_asc.gif" ></th>
+							<th><a href="###">商品名称</a></th>
+							<th><a href="###">商品货号</a></th>	
+							<th><a href="###">商品价格</a></th>
+							<th><a href="###">商品图片</a></th>	
+							<th>操作</th>
+						</tr>
+					</table>
+				</div>
+				<!-- 底部分页 -->
+			    <div class="order_pagenav page_div" id="goods_page"></div>
+			</div>
+			<!-- 商品列表结束 -->
+			<!-- 添加新商品开始 -->
+			<div class="goods_addNew" style="display: none;">
+				<form action="post" enctype="multipart/form-data">
+					<table>
+						<tr>
+							<td>商品编号：</td>
+							<td><input class="goods_addId" type="text"/></td>
+						</tr>
+						<tr>
+							<td>商品名称：</td>
+							<td><input class="goods_addName" type="text"/></td>
+						</tr>
+						<tr>
+							<td>商品货号：</td>
+							<td><input class="goods_addHuohao" type="text"/></td>
+						</tr>
+						<tr>
+							<td>商品价格：</td>
+							<td><input class="goods_addPrice" type="text"/></td>
+						</tr>
+						<tr>
+							<td>商品图片：</td>
+							<td><input class="goods_addPic" type="file" style="border:none;" value="1.jpg" accept="image/gif,image/jpeg,image/jpg,image/png" id="goods_upPic" /></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="text" class="goods_show_picLj"></td>
+						</tr>
+					</table>
+					<input type="button" value="确定" class="button" id="goods_btn">
+					<input type="reset" value="重置" class="button">
+				</form>
+			</div>
+			<!-- 添加新商品结束 -->
+			<!-- 用户评论开始 -->
+			<div class="goods_common goods_right" style="display: none;">
+				<table>
+					<tr>
+						<th><input type="checkbox"><a href="###">编号</a><img src="images/sort_asc.gif" ></th>
+						<th><a href="###">用户名</a></th>
+						<th><a href="###">评论内容</a></th>
+						<th><a href="###">操作</a></th>
+					</tr>
+				</table>
+				<!-- 底部分页 -->
+			    <div class="order_pagenav page_div" id="goods_common_page"></div>
+			</div>
+			<!-- 用户评论结束 -->
+			<!-- 商品回收站开始 -->
+			<div class="goods_recycle goods_right" style="display: none;">
+				<form action="post" enctype="multipart/form-data">
+					<table>
+						<tr>
+							<th><input type="checkbox"><a href="###">编号</a><img src="images/sort_asc.gif" ></th>
+							<th><a href="###">商品名称</a></th>
+							<th><a href="###">商品货号</a></th>	
+							<th><a href="###">商品价格</a></th>
+							<th><a href="###">商品图片</a></th>	
+							<th>操作</th>
+						</tr>
+					</table>
+				</form>
+				<!-- 底部分页 -->
+			    <div class="order_pagenav page_div" id="goods_recycle_page"></div>
+			</div>
+			<!-- 商品回收站结束 -->
+		</div>
+		<!-- 这是商品管理内容结束 -->
+		
+		<!-- 这是订单内容开始 -->
+		<div class="scshop_order active">
+			<h1>ECSHOP管理中心</h1>
+			<div class="scshop_order_select">
+				订单号<input class="scshop_order_select_inp" type="text"><button class="scshop_order_select_btn">搜索</button>
+			</div>
+			<table>
+			</table>
+			<div class="order_pagenav page_div" id="page"></div>
+		</div>
+		<!-- 这是订单内容结束 -->
+	</section>
+	<!-- 这是主体内容结束 -->
+</body>
+<script src="js/jQuery.js"></script>
+<script src="js/scshop.js"></script>
+<script type="text/javascript" src="js/paging.js"></script>
+<script src="js/scshop_goods.js"></script>
+<script src="js/scshop_swiper.js"></script>
+<script src="js/scshop_order.js"></script>
+</html>

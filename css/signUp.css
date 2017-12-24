@@ -1,0 +1,145 @@
+article {
+	width: 100%;
+	background:#f3f3f3;
+}
+.signUp_content{
+	width: 100%;
+	height: 600px;
+	background: url('../images/login_1.jpg');
+	position: relative;
+}
+.signUp_window {
+	width: 300px;
+	height: 410px;
+	background: white;
+	position: absolute;
+	right: 400px;
+	top: 40px;
+	padding: 5px 25px 0px;
+}
+.signUp_article p{
+	font-size: 18px;
+	color:rgb(49,49,49);
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+.signUp_user,.signUp_code,.signUp_password,.signUp_password_again{
+	width: 300px;
+	height: 38px;
+	border:1px solid rgb(225,225,225);
+	position: relative;
+}
+.signUp_user input,.signUp_password input,.signUp_password_again input{
+	width: 250px;
+	height: 36px;
+}
+.signUp_code input{
+	width: 298px;
+	height: 36px;
+}
+.signUp_code input{
+	text-indent: 2em;
+}
+.signUp_password label,.signUp_password_again label{
+	width: 40px;
+	height: 39px;
+	display: inline-block;
+	background: url('../images/member-password.png') no-repeat;
+	background-position: center;
+	background-color: rgba(204, 204, 204, 0.12);
+}
+.cue{
+	width: 300px;
+	height: 15px;
+	font-size: 12px;
+	color: red;
+	line-height: 15px;
+}
+.signUp_user label {
+	width: 40px;
+	height: 39px;
+	display: inline-block;
+	background: url('../images/login_name.png') no-repeat;
+	background-position: center;
+	background-color: rgba(204, 204, 204, 0.12);
+}
+.signUp_read{
+	font-size: 12px;
+	color: rgb(49,49,49);
+	margin-bottom: 15px;
+}
+.signUp_read a{
+	color: rgb(0, 186, 214);
+	margin: 0px 5px;
+}
+.signUp_promise {
+	width: 1268px;
+	margin: 0 auto;
+	
+}
+.signUp_promise_item{
+	width: 215px;
+	height: 100px;
+	line-height: 100px;
+	margin-right: 10px;
+}
+.signUp_promise_item img {
+	margin-top: 30px;
+	margin-left: 40px;
+}
+.signUp_promise_item span{
+	display: inline-block;
+	height: 100px;
+	margin-left: 20px;
+	font-size: 16px;
+	color: rgb(106,106,106);
+	line-height: 100px;
+	font-weight: 400;
+	vertical-align: top;
+}
+ .signup_sub{
+	width: 300px;
+	height: 40px;
+	font-size: 18px;
+	color:white;
+	background: rgb(0, 186, 214);
+	display: inline-block;
+	
+}
+.signUp_sure{
+	line-height: 22px;
+
+}
+.signUp_sure p{
+	font-size: 12px;
+	margin-right: 10px;
+}
+.signUp_sure a{
+	font-size: 14px;
+	color: rgb(0, 186, 214);
+}
+.error{
+	width: 20px;
+	height: 20px;
+	background: url('../images/wron.png') no-repeat;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+.verify-change-area{
+	display: none;
+}
+.signUp_code_yanzheng{
+	height: 38px;
+}
+// .varify-input-code{
+// 	position: relative;
+// }
+.cerify-code-panel{
+	position: relative;
+}
+.verify-code{
+	position: absolute;
+	top: 0px;
+	left: 100px;
+}

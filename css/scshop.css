@@ -1,0 +1,208 @@
+/* 这是 头部样式 开始 */
+header{
+	height: 70px;
+    background: #41a5e1;
+}
+header .header_left, header .header_right {
+	padding-top: 10px;
+}
+header .header_left>img {
+	width: 130px;
+}
+header .header_left span {
+	margin-top: 25px;
+}
+header .header_left .middle_span a{
+	border-left: 1px solid #999;
+    width: 50px;
+    margin-left: 20px;
+    height: 24px;
+    display: inline-block;
+    background: url(../images/noauthorize.png) no-repeat 20px 0;
+}
+header .header_left .bottom_span a{
+	font-size: 12px;
+    display: inline-block;
+    height: 25px;
+    color: #f90;
+    line-height: 22px;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+header .header_left .bottom_span a:hover{
+	text-decoration: underline;
+}
+header .header_right>li, header .header_right .header_right_sp ul li {
+	padding: 0 10px;
+    margin: 3px 0;
+    border-left: 1px solid #FFF;
+    font-size: 12px;
+}
+header .header_right .header_right_first {
+	border-left: 1px solid transparent;
+}
+header .header_right>li a {
+	color: white;
+}
+header .header_right>li a:hover{
+	color: #F5C29A
+}
+header .header_right .header_right_sp {
+	position: relative;
+}
+header .header_right .header_right_sp ul{
+	width: 70px;
+	position: absolute;
+	top: 23px;
+	left: 0;
+	display: none;
+	background-color: white;
+	text-align: center;
+}
+header .header_right .header_right_sp ul:before{
+	display: inline-block;
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 7px solid white;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid transparent;
+	position: absolute;
+	top: -14px;
+	left: 27px;
+}
+header .header_right .header_right_sp:hover ul{
+	display: block;
+}
+header .header_right .header_right_sp ul li {
+	margin: 0;
+	border: 1px solid transparent;
+}
+header .header_right .header_right_sp ul li a {
+	color: black;
+	display: inline-block;
+	padding: 1px 0;
+}
+header .header_right .header_right_sp ul li:hover{
+	background: #ddeef2;
+	border: 1px solid #ccc;
+}
+/* 这是 头部样式 结束 */
+
+/* 这是 导航样式 开始 */
+nav {
+	background: #f5f5f5;
+    font-weight: bold;
+    height: 49px;
+    line-height: 49px;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 12px;
+    padding-left: 30px;
+}
+nav ul li {
+	float: left;
+}
+nav ul li a {
+	display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #3a3a3a;
+}
+nav ul li a img{
+	vertical-align: middle;
+}
+/* 这是 导航样式 结束 */
+
+/* 这是 侧边栏样式 开始 */
+.slide_nav, section {
+	height: calc(100vh - 120px);
+}
+.slide_nav {
+	width: 172px;
+	background-color: #656565;
+	font-size: 12px;
+	position: absolute;
+	top: 120px;
+	left: 0;
+}
+.slide_nav a {
+	color: white;
+}
+.slide_nav .slide_nav_head {
+	background: #5a5a5a;
+    padding-left: 10px;
+    height: 36px;
+    position: relative;
+    font-weight: bolder;
+}
+.slide_nav .slide_nav_head p {
+    color: #ffffff; 
+    padding-left: 10px;
+    height: 36px;
+    line-height: 36px;
+    border-right: 2px solid #335b64;
+    cursor: pointer;
+}
+.slide_nav .slide_nav_head .slide_nav_allChecked{
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	border: 1px solid white;
+	color: white;
+	line-height: 8px;
+}
+.slide_nav .slide_nav_content {
+	padding: 5px;
+    margin: 5px;
+    background: #656565;
+    color: #ffffff;
+}
+.slide_nav .slide_nav_content>li {
+	margin-top: 10px;
+	line-height: 18px;
+}
+.slide_nav .nav_Checked {
+	border: 1px solid white;
+	color: white;
+	line-height: 8px;
+	margin: 4px 4px 0 0;
+}
+.slide_nav .slide_nav_content>li div>span {
+	font-weight: 400;
+}
+.slide_nav .slide_nav_content>li div ol {
+	display: none;
+}
+.slide_nav .slide_nav_content>li div ol li a {
+	padding-left: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #e1e1e1;
+}
+/* 这是 侧边栏导航样式 结束 */
+
+/* 这是 主体样式 开始 */
+section {
+	margin-left: 182px;
+	width: calc(100% - 182px);
+	// background-color: #ccc;
+}
+/* 这是 主体样式 结束 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
